@@ -99,25 +99,58 @@ footer {
 
 /* unique background-color of each button */
 
-#arts {
-    background-color: #98f991;
+.arts {
+    background-color: #FF6666; /*red*/
 }
 
-#school {
-    background-color: #a19ef9;
+.school {
+    background-color: #98f991; /*green*/
 }
 
-#textile {
-    background-color: #f99eb9;
+.textile {
+    background-color: lightblue; /*blue*/
 }
 
-#yarn {
-    background-color: #f6f99e;
+.holiday {
+    background-color: #f9cb9e; /*orange*/
 }
 
-#misc {
-    background-color: #f9cb9e;
+.plastics {
+    background-color: #f6f99e; /*yellow*/
 }
+
+.misc {
+    background-color: #f99eb9; /*pink*/
+}
+
+.artsLight {
+    background-color: #FF6666; /*red*/
+}
+
+.schoolLight {
+    background-color: #c8ffc1; /*green*/
+}
+
+.textileLight {
+    background-color: #f6f99e; /*blue*/
+}
+
+.holidayLight {
+    background-color: #fffbce; /*orange*/
+}
+
+.plasticsLight {
+    background-color: #f6f99e; /*yellow*/
+}
+
+.miscLight {
+    background-color: #ffcee9; /*pink*/
+}
+
+.archived {
+    background-color: #eee; /*grey*/
+}
+
 
 /* Formats how mouse interacts with the linked buttons */
 
