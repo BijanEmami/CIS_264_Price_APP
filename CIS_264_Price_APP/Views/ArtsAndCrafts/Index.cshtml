@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CIS_264_Price_APP.Models.Arts_Crafts.ArtsAndCrafts>
+
+@{
+    ViewBag.Title = "Arts and Crafts";
+}
+
+<!DOCTYPE html>
+<!-- 10/03/2021 -->
+<html lang="en">
+<head>
+    <title> Arts/Crafts </title>
+    <meta charset="utf-8">
+
+    <link href="~/Styles/StyleSheet1.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TBD(L)">
+
+</head>
+
+<
+
+
+<body>
+    <header>
+
+        <img src="~/Images/ScrapsKC_logo-01small.png" />
+    </header>
+    <div id="wrapper">
+        <h1>Arts and Crafts</h1>
+        <div id="content">
+
+            <button class="button" id="arts" type="button" onclick="location.href='@Url.Action("Index", "Arts_Crafts_A_C" )'">A-C</button>
+
+            <button class="button" id="arts" type="button" onclick="location.href='@Url.Action("Index", "Arts_Crafts_D_O" )'">D-O</button>
+
+            <button class="button" id="arts" type="button" onclick="location.href='@Url.Action("Index", "Arts_Crafts_P_Q" )'">P-Q</button>
+
+            <button class="button" id="arts" type="button" onclick="location.href='@Url.Action("Index", "Arts_Crafts_R_S" )'">R-S</button>
+
+            <button class="button" id="arts" type="button" onclick="location.href='@Url.Action("Index", "Arts_Crafts_T_Z" )'">T-Z</button>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

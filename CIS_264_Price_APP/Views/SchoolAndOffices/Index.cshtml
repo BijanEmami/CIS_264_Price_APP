@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CIS_264_Price_APP.Models.School_Office.SchoolAndOffice>
+
+@{
+    ViewBag.Title = "SchoolAndOffice";
+}
+
+<!DOCTYPE html>
+<!-- 10/03/2021 -->
+<html lang="en">
+<head>
+    <title> School/Office </title>
+    <meta charset="utf-8">
+
+    <link href="~/Styles/StyleSheet1.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TBD(L)">
+
+</head>
+
+<
+
+
+<body>
+    <header>
+
+        <img src="~/Images/ScrapsKC_logo-01small.png" />
+    </header>
+    <div id="wrapper">
+        <h1>School/Office</h1>
+        <div id="content">
+
+            <button class="button" id="school" type="button" onclick="location.href='@Url.Action("Index", "School_Office_A_B" )'">A-B</button>
+
+            <button class="button" id="school" type="button" onclick="location.href='@Url.Action("Index", "School_Office_C_D" )'">C-D</button>
+
+            <button class="button" id="school" type="button" onclick="location.href='@Url.Action("Index", "School_Office_E_K" )'">E-K</button>
+
+            <button class="button" id="school" type="button" onclick="location.href='@Url.Action("Index", "School_Office_L_N" )'">L-N</button>
+
+            <button class="button" id="school" type="button" onclick="location.href='@Url.Action("Index", "School_Office_O_P" )'">O-P</button>
+
+            <button class="button" id="school" type="button" onclick="location.href='@Url.Action("Index", "School_Office_Q_Z" )'">Q-Z</button>
+
+        </div>
+    </div>
+</body>
+</html>

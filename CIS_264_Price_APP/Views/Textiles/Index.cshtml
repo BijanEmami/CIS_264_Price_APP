@@ -1,0 +1,45 @@
+﻿@model IEnumerable<CIS_264_Price_APP.Models.Textiles.Textiles>
+
+@{
+    ViewBag.Title = "Textiles";
+}
+
+<!DOCTYPE html>
+<!-- 10/03/2021 -->
+<html lang="en">
+<head>
+    <title> Textiles </title>
+    <meta charset="utf-8">
+
+    <link href="~/Styles/StyleSheet1.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TBD(L)">
+
+</head>
+
+<
+
+
+<body>
+    <header>
+
+        <img src="~/Images/ScrapsKC_logo-01small.png" />
+    </header>
+    <div id="wrapper">
+        <h1>Textiles</h1>
+        <div id="content">
+
+            <button class="button" id="textile" type="button" onclick="location.href='@Url.Action("Index", "Textiles_A_C" )'">A-C</button>
+
+            <button class="button" id="textile" type="button" onclick="location.href='@Url.Action("Index", "Textiles_D_N" )'">D-N</button>
+
+            <button class="button" id="textile" type="button" onclick="location.href='@Url.Action("Index", "Textiles_P_S" )'">P-S</button>
+
+            <button class="button" id="textile" type="button" onclick="location.href='@Url.Action("Index", "Textiles_T_V" )'">T-V</button>
+
+            <button class="button" id="textile" type="button" onclick="location.href='@Url.Action("Index", "Textiles_W_Z" )'">W-Z</button>
+                        
+        </div>
+    </div>
+</body>
+</html>

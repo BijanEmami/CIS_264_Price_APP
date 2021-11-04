@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -120,10 +126,63 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ArtsAndCraftsControllers\ArtsAndCraftsController.cs" />
+    <Compile Include="Controllers\ArtsAndCraftsControllers\Arts_Crafts_A_CController.cs" />
+    <Compile Include="Controllers\ArtsAndCraftsControllers\Arts_Crafts_D_OController.cs" />
+    <Compile Include="Controllers\ArtsAndCraftsControllers\Arts_Crafts_P_QController.cs" />
+    <Compile Include="Controllers\ArtsAndCraftsControllers\Arts_Crafts_R_SController.cs" />
+    <Compile Include="Controllers\ArtsAndCraftsControllers\Arts_Crafts_T_ZController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MiscellaneousControllers\MiscellaneousController.cs" />
+    <Compile Include="Controllers\MiscellaneousControllers\Misc_A_FController.cs" />
+    <Compile Include="Controllers\MiscellaneousControllers\Misc_G_LController.cs" />
+    <Compile Include="Controllers\MiscellaneousControllers\Misc_M_OController.cs" />
+    <Compile Include="Controllers\MiscellaneousControllers\Misc_PController.cs" />
+    <Compile Include="Controllers\MiscellaneousControllers\Misc_Q_SController.cs" />
+    <Compile Include="Controllers\MiscellaneousControllers\Misc_T_ZController.cs" />
+    <Compile Include="Controllers\SchoolAndOfficesControllers\SchoolAndOfficesController.cs" />
+    <Compile Include="Controllers\SchoolAndOfficesControllers\School_Office_A_BController.cs" />
+    <Compile Include="Controllers\SchoolAndOfficesControllers\School_Office_C_DController.cs" />
+    <Compile Include="Controllers\SchoolAndOfficesControllers\School_Office_E_KController.cs" />
+    <Compile Include="Controllers\SchoolAndOfficesControllers\School_Office_L_NController.cs" />
+    <Compile Include="Controllers\SchoolAndOfficesControllers\School_Office_O_PController.cs" />
+    <Compile Include="Controllers\SchoolAndOfficesControllers\School_Office_Q_ZController.cs" />
+    <Compile Include="Controllers\TextilesControllers\TextilesController.cs" />
+    <Compile Include="Controllers\TextilesControllers\Textiles_A_CController.cs" />
+    <Compile Include="Controllers\TextilesControllers\Textiles_D_NController.cs" />
+    <Compile Include="Controllers\TextilesControllers\Textiles_P_SController.cs" />
+    <Compile Include="Controllers\TextilesControllers\Textiles_T_VController.cs" />
+    <Compile Include="Controllers\TextilesControllers\Textiles_W_ZController.cs" />
+    <Compile Include="Data\CIS_264_Price_APPContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Arts_Crafts\ArtsAndCrafts.cs" />
+    <Compile Include="Models\Arts_Crafts\Arts_Crafts_A_C.cs" />
+    <Compile Include="Models\Arts_Crafts\Arts_Crafts_D_O.cs" />
+    <Compile Include="Models\Arts_Crafts\Arts_Crafts_P_Q.cs" />
+    <Compile Include="Models\Arts_Crafts\Arts_Crafts_R_S.cs" />
+    <Compile Include="Models\Arts_Crafts\Arts_Crafts_T_Z.cs" />
+    <Compile Include="Models\Misc\Miscellaneous.cs" />
+    <Compile Include="Models\Misc\Misc_A_F.cs" />
+    <Compile Include="Models\Misc\Misc_G_L.cs" />
+    <Compile Include="Models\Misc\Misc_M_O.cs" />
+    <Compile Include="Models\Misc\Misc_P.cs" />
+    <Compile Include="Models\Misc\Misc_Q_S.cs" />
+    <Compile Include="Models\Misc\Misc_T_Z.cs" />
+    <Compile Include="Models\School_Office\SchoolAndOffice.cs" />
+    <Compile Include="Models\School_Office\School_Office_A_B.cs" />
+    <Compile Include="Models\School_Office\School_Office_C_D.cs" />
+    <Compile Include="Models\School_Office\School_Office_E_K.cs" />
+    <Compile Include="Models\School_Office\School_Office_L_N.cs" />
+    <Compile Include="Models\School_Office\School_Office_O_P.cs" />
+    <Compile Include="Models\School_Office\School_Office_Q_Z.cs" />
+    <Compile Include="Models\Textiles\Textiles.cs" />
+    <Compile Include="Models\Textiles\Textiles_A_C.cs" />
+    <Compile Include="Models\Textiles\Textiles_D_N.cs" />
+    <Compile Include="Models\Textiles\Textiles_P_S.cs" />
+    <Compile Include="Models\Textiles\Textiles_T_V.cs" />
+    <Compile Include="Models\Textiles\Textiles_W_Z.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +194,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\scrapskc-logo.jpg" />
+    <Content Include="Images\scrapsKC_filled-01.png" />
+    <Content Include="Images\ScrapsKC_logo-01.png" />
+    <Content Include="Images\ScrapsKC_logo-01small.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -148,6 +211,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Styles\StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -159,13 +223,124 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\ArtsAndCrafts\Index.cshtml" />
+    <Content Include="Views\Miscellaneous\Index.cshtml" />
+    <Content Include="Views\SchoolAndOffices\Index.cshtml" />
+    <Content Include="Views\Textiles\Index.cshtml" />
+    <Content Include="Views\Arts_Crafts_A_C\Create.cshtml" />
+    <Content Include="Views\Arts_Crafts_A_C\Delete.cshtml" />
+    <Content Include="Views\Arts_Crafts_A_C\Details.cshtml" />
+    <Content Include="Views\Arts_Crafts_A_C\Edit.cshtml" />
+    <Content Include="Views\Arts_Crafts_A_C\Index.cshtml" />
+    <Content Include="Views\Arts_Crafts_D_O\Create.cshtml" />
+    <Content Include="Views\Arts_Crafts_D_O\Delete.cshtml" />
+    <Content Include="Views\Arts_Crafts_D_O\Details.cshtml" />
+    <Content Include="Views\Arts_Crafts_D_O\Edit.cshtml" />
+    <Content Include="Views\Arts_Crafts_D_O\Index.cshtml" />
+    <Content Include="Views\Arts_Crafts_P_Q\Create.cshtml" />
+    <Content Include="Views\Arts_Crafts_P_Q\Delete.cshtml" />
+    <Content Include="Views\Arts_Crafts_P_Q\Details.cshtml" />
+    <Content Include="Views\Arts_Crafts_P_Q\Edit.cshtml" />
+    <Content Include="Views\Arts_Crafts_P_Q\Index.cshtml" />
+    <Content Include="Views\Arts_Crafts_R_S\Create.cshtml" />
+    <Content Include="Views\Arts_Crafts_R_S\Delete.cshtml" />
+    <Content Include="Views\Arts_Crafts_R_S\Details.cshtml" />
+    <Content Include="Views\Arts_Crafts_R_S\Edit.cshtml" />
+    <Content Include="Views\Arts_Crafts_R_S\Index.cshtml" />
+    <Content Include="Views\Arts_Crafts_T_Z\Create.cshtml" />
+    <Content Include="Views\Arts_Crafts_T_Z\Delete.cshtml" />
+    <Content Include="Views\Arts_Crafts_T_Z\Details.cshtml" />
+    <Content Include="Views\Arts_Crafts_T_Z\Edit.cshtml" />
+    <Content Include="Views\Arts_Crafts_T_Z\Index.cshtml" />
+    <Content Include="Views\Misc_A_F\Create.cshtml" />
+    <Content Include="Views\Misc_A_F\Delete.cshtml" />
+    <Content Include="Views\Misc_A_F\Details.cshtml" />
+    <Content Include="Views\Misc_A_F\Edit.cshtml" />
+    <Content Include="Views\Misc_A_F\Index.cshtml" />
+    <Content Include="Views\Misc_G_L\Create.cshtml" />
+    <Content Include="Views\Misc_G_L\Delete.cshtml" />
+    <Content Include="Views\Misc_G_L\Details.cshtml" />
+    <Content Include="Views\Misc_G_L\Edit.cshtml" />
+    <Content Include="Views\Misc_G_L\Index.cshtml" />
+    <Content Include="Views\Misc_M_O\Create.cshtml" />
+    <Content Include="Views\Misc_M_O\Delete.cshtml" />
+    <Content Include="Views\Misc_M_O\Details.cshtml" />
+    <Content Include="Views\Misc_M_O\Edit.cshtml" />
+    <Content Include="Views\Misc_M_O\Index.cshtml" />
+    <Content Include="Views\Misc_P\Create.cshtml" />
+    <Content Include="Views\Misc_P\Delete.cshtml" />
+    <Content Include="Views\Misc_P\Details.cshtml" />
+    <Content Include="Views\Misc_P\Edit.cshtml" />
+    <Content Include="Views\Misc_P\Index.cshtml" />
+    <Content Include="Views\Misc_Q_S\Create.cshtml" />
+    <Content Include="Views\Misc_Q_S\Delete.cshtml" />
+    <Content Include="Views\Misc_Q_S\Details.cshtml" />
+    <Content Include="Views\Misc_Q_S\Edit.cshtml" />
+    <Content Include="Views\Misc_Q_S\Index.cshtml" />
+    <Content Include="Views\Misc_T_Z\Create.cshtml" />
+    <Content Include="Views\Misc_T_Z\Delete.cshtml" />
+    <Content Include="Views\Misc_T_Z\Details.cshtml" />
+    <Content Include="Views\Misc_T_Z\Edit.cshtml" />
+    <Content Include="Views\Misc_T_Z\Index.cshtml" />
+    <Content Include="Views\School_Office_A_B\Create.cshtml" />
+    <Content Include="Views\School_Office_A_B\Delete.cshtml" />
+    <Content Include="Views\School_Office_A_B\Details.cshtml" />
+    <Content Include="Views\School_Office_A_B\Edit.cshtml" />
+    <Content Include="Views\School_Office_A_B\Index.cshtml" />
+    <Content Include="Views\School_Office_C_D\Create.cshtml" />
+    <Content Include="Views\School_Office_C_D\Delete.cshtml" />
+    <Content Include="Views\School_Office_C_D\Details.cshtml" />
+    <Content Include="Views\School_Office_C_D\Edit.cshtml" />
+    <Content Include="Views\School_Office_C_D\Index.cshtml" />
+    <Content Include="Views\School_Office_E_K\Create.cshtml" />
+    <Content Include="Views\School_Office_E_K\Delete.cshtml" />
+    <Content Include="Views\School_Office_E_K\Details.cshtml" />
+    <Content Include="Views\School_Office_E_K\Edit.cshtml" />
+    <Content Include="Views\School_Office_E_K\Index.cshtml" />
+    <Content Include="Views\School_Office_L_N\Create.cshtml" />
+    <Content Include="Views\School_Office_L_N\Delete.cshtml" />
+    <Content Include="Views\School_Office_L_N\Details.cshtml" />
+    <Content Include="Views\School_Office_L_N\Edit.cshtml" />
+    <Content Include="Views\School_Office_L_N\Index.cshtml" />
+    <Content Include="Views\School_Office_O_P\Create.cshtml" />
+    <Content Include="Views\School_Office_O_P\Delete.cshtml" />
+    <Content Include="Views\School_Office_O_P\Details.cshtml" />
+    <Content Include="Views\School_Office_O_P\Edit.cshtml" />
+    <Content Include="Views\School_Office_O_P\Index.cshtml" />
+    <Content Include="Views\School_Office_Q_Z\Create.cshtml" />
+    <Content Include="Views\School_Office_Q_Z\Delete.cshtml" />
+    <Content Include="Views\School_Office_Q_Z\Details.cshtml" />
+    <Content Include="Views\School_Office_Q_Z\Edit.cshtml" />
+    <Content Include="Views\School_Office_Q_Z\Index.cshtml" />
+    <Content Include="Views\Textiles_A_C\Create.cshtml" />
+    <Content Include="Views\Textiles_A_C\Delete.cshtml" />
+    <Content Include="Views\Textiles_A_C\Details.cshtml" />
+    <Content Include="Views\Textiles_A_C\Edit.cshtml" />
+    <Content Include="Views\Textiles_A_C\Index.cshtml" />
+    <Content Include="Views\Textiles_D_N\Create.cshtml" />
+    <Content Include="Views\Textiles_D_N\Delete.cshtml" />
+    <Content Include="Views\Textiles_D_N\Details.cshtml" />
+    <Content Include="Views\Textiles_D_N\Edit.cshtml" />
+    <Content Include="Views\Textiles_D_N\Index.cshtml" />
+    <Content Include="Views\Textiles_P_S\Create.cshtml" />
+    <Content Include="Views\Textiles_P_S\Delete.cshtml" />
+    <Content Include="Views\Textiles_P_S\Details.cshtml" />
+    <Content Include="Views\Textiles_P_S\Edit.cshtml" />
+    <Content Include="Views\Textiles_P_S\Index.cshtml" />
+    <Content Include="Views\Textiles_T_V\Create.cshtml" />
+    <Content Include="Views\Textiles_T_V\Delete.cshtml" />
+    <Content Include="Views\Textiles_T_V\Details.cshtml" />
+    <Content Include="Views\Textiles_T_V\Edit.cshtml" />
+    <Content Include="Views\Textiles_T_V\Index.cshtml" />
+    <Content Include="Views\Textiles_W_Z\Create.cshtml" />
+    <Content Include="Views\Textiles_W_Z\Delete.cshtml" />
+    <Content Include="Views\Textiles_W_Z\Details.cshtml" />
+    <Content Include="Views\Textiles_W_Z\Edit.cshtml" />
+    <Content Include="Views\Textiles_W_Z\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
