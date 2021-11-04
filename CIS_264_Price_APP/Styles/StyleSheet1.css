@@ -14,10 +14,10 @@ body {
     padding-bottom: 1.5em;
     background-color: white;
     margin: auto;
-    display: inline-block;
+    /* display: inline-block;*/
 }
 
-/* Formats buttons on page */
+/* Formats buttons on page 
 .formbox {
     width: 60%;
     margin-top: 20px;
@@ -46,17 +46,7 @@ body {
     height: 50px;
     width: 50px;
     font-size: 5px;
-}
-
-.button {
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 20px;
-    margin-bottom: 1em;
-    height: 200px;
-    width: 200px;
-    font-size: 30px;
-}
+}*/
 
 h1 {
     text-align: center;
@@ -65,6 +55,30 @@ h1 {
     color: white;
     padding-top: 1em;
     /*padding-bottom: 1em;*/
+}
+
+h3 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+table,
+td,
+th {
+    border-collapse: collapse;
+    padding: 0.5em;
+    margin: 1em;
+    border: 1px #000 solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    width: 15%;
+}
+
+#content input {
+    margin: 0 0.5em 0.5em 0.5em;
 }
 
 footer {
@@ -87,6 +101,27 @@ footer {
     padding: 8em 0 4em 0;
     margin: 0 4em 0 4em;
     background-color: white;
+    align-items: center;
+}
+
+#login {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#loginButton {
+    float: right;
+}
+
+#admin {
+    padding-right: 0.5em;
+}
+
+#or {
+    color: white;
+    font-weight: bold;
 }
 
 #back {
@@ -151,6 +186,16 @@ footer {
     background-color: #eee; /*grey*/
 }
 
+#create button {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    height: 50px;
+    width: 50px;
+    font-size: 5px;
+    background-color: #98f991;
+}
 
 /* Formats how mouse interacts with the linked buttons */
 
@@ -159,6 +204,21 @@ footer {
     background-color: green;
     margin: 0 3em 0 3em;
     color: black;
+}
+
+/* Formats buttons on page */
+.menue {
+    margin-top: 1em;
+}
+
+.large {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-bottom: 1em;
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
 }
 
 a:visited {
