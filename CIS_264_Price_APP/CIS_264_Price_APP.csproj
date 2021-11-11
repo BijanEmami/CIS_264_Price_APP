@@ -194,6 +194,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Scraps-KC-favicon.png" />
     <Content Include="Images\scrapskc-logo.jpg" />
     <Content Include="Images\scrapsKC_filled-01.png" />
     <Content Include="Images\ScrapsKC_logo-01.png" />
