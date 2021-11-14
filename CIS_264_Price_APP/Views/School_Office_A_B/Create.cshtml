@@ -1,61 +1,77 @@
 ﻿@model CIS_264_Price_APP.Models.School_Office.School_Office_A_B
 
-@{
-    Layout = null;
-}
-
 <!DOCTYPE html>
-
-<html>
+<!-- 10/03/2021 -->
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
+
+    <meta charset="utf-8">
+    <link href="~/Styles/StyleSheet1.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TBD(L)">
+
 </head>
 <body>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/jqueryval")
-    
-    
-    @using (Html.BeginForm()) 
-    {
-        @Html.AntiForgeryToken()
-        
-        <div class="form-horizontal">
-            <h4>School_Office_A_B</h4>
-            <hr />
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            <div class="form-group">
-                @Html.LabelFor(model => model.Category, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Category, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-danger" })
+    <header>
+
+        <img src="~/Images/ScrapsKC_logo-01small.png" />
+    </header>
+    <div id="wrapper">
+        <h1>School and Office</h1>
+        <h1>A - B</h1>
+        <div id="content">
+
+
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+
+
+                <div class="formbox">
+                    <h4>Create</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <!--<div class="form-group">-->
+
+                    @Html.LabelFor(model => model.Category, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="form-group">
+                        @Html.EditorFor(model => model.Category, new { htmlAttributes = new { @class = "form-control " } })
+                        @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-danger" })
+                    </div>
+
+                    @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="form-group">
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control " } })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                    </div>
+
+                    @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="form-group">
+                        @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control " } })
+                        @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                    </div>
+
+
                 </div>
-            </div>
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
-                </div>
-            </div>
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
-                </div>
-            </div>
-    
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
+
+
+
+
+
+                <div class="form-group ">
+
                     <input type="submit" value="Create" class="btn btn-default" />
+
                 </div>
-            </div>
+                <!--</div>-->
+
+
+            }
+
         </div>
-    }
-    
+    </div>
     <div>
         @Html.ActionLink("Back to List", "Index")
     </div>

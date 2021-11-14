@@ -1,53 +1,72 @@
 ﻿@model IEnumerable<CIS_264_Price_APP.Models.School_Office.School_Office_O_P>
 
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
 }
 
 <!DOCTYPE html>
 
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title> School/Office </title>
+    <meta charset="utf-8">
+    <link href="~/Styles/StyleSheet1.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TBD(L)">
+
 </head>
+
 <body>
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Category)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th></th>
-        </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Category)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.School_Office_O_P_ID }) |
-                @Html.ActionLink("Details", "Details", new { id=item.School_Office_O_P_ID }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.School_Office_O_P_ID })
-            </td>
-        </tr>
-    }
-    
-    </table>
+    <header>
+
+        <img src="~/Images/ScrapsKC_logo-01small.png" />
+    </header>
+    <div id="wrapper">
+        <h1>School and Office</h1>
+        <h1>O - P</h1>
+        <div id="content">
+            <p>
+                <button class="school" id="school" type="button" onclick="location.href='@Url.Action("Create", "School_Office_O_P" )'">Create</button>
+            </p>
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Category)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Price)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Category)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </td>
+                        <td>
+
+                            <button class="school" id="school" type="button" onclick="location.href='@Url.Action("Edit", "School_Office_O_P", new { id = item.School_Office_O_P_ID } )'">Edit</button> |
+                            <button class="school" id="school" type="button" onclick="location.href='@Url.Action("Details", "School_Office_O_P", new { id = item.School_Office_O_P_ID } )'">Details</button> |
+                            <button class="school" id="school" type="button" onclick="location.href='@Url.Action("Delete", "School_Office_O_P", new { id = item.School_Office_O_P_ID } )'">Delete</button>
+                        </td>
+                    </tr>
+                }
+
+            </table>
+
+        </div>
+    </div>
 </body>
 </html>
