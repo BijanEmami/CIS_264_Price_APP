@@ -186,6 +186,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Arts_Crafts_A_C.mdf" />
+    <Content Include="App_Data\Arts_Crafts_A_C_log.ldf">
+      <DependentUpon>Arts_Crafts_A_C.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -340,7 +344,6 @@
     <Content Include="Views\Textiles_W_Z\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\Holidays\" />
     <Folder Include="Models\Plastics\" />
   </ItemGroup>
