@@ -178,7 +178,7 @@
     <Compile Include="Migrations\202111160031545_Plastics.cs" />
     <Compile Include="Migrations\202111160031545_Plastics.Designer.cs">
       <DependentUpon>202111160031545_Plastics.cs</DependentUpon>
-
+    </Compile>
     <Compile Include="Migrations\202111160012042_db.cs" />
     <Compile Include="Migrations\202111160012042_db.Designer.cs">
       <DependentUpon>202111160012042_db.cs</DependentUpon>
@@ -442,7 +442,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111160031545_Plastics.resx">
       <DependentUpon>202111160031545_Plastics.cs</DependentUpon>
-
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111160012042_db.resx">
       <DependentUpon>202111160012042_db.cs</DependentUpon>
 
