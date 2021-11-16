@@ -82,5 +82,11 @@ namespace CIS_264_Price_APP.Data
         public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Holidays.St> Sts { get; set; }
 
         public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Holidays.XmasandNewYear> XmasandNewYears { get; set; }
+
+        public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Plastics.Plastics> Plastics { get; set; }
+
+        public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Plastics.Programs> Programs { get; set; }
+
+        public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Plastics.Products> Products { get; set; }
     }
 }

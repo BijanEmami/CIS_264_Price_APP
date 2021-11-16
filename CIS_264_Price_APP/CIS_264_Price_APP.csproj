@@ -146,6 +146,9 @@
     <Compile Include="Controllers\MiscellaneousControllers\Misc_PController.cs" />
     <Compile Include="Controllers\MiscellaneousControllers\Misc_Q_SController.cs" />
     <Compile Include="Controllers\MiscellaneousControllers\Misc_T_ZController.cs" />
+    <Compile Include="Controllers\PlasticsControllers\PlasticsController.cs" />
+    <Compile Include="Controllers\PlasticsControllers\ProductsController.cs" />
+    <Compile Include="Controllers\PlasticsControllers\ProgramsController.cs" />
     <Compile Include="Controllers\SchoolAndOfficesControllers\SchoolAndOfficesController.cs" />
     <Compile Include="Controllers\SchoolAndOfficesControllers\School_Office_A_BController.cs" />
     <Compile Include="Controllers\SchoolAndOfficesControllers\School_Office_C_DController.cs" />
@@ -171,6 +174,10 @@
     <Compile Include="Migrations\202111152024540_HolidayClasses.Designer.cs">
       <DependentUpon>202111152024540_HolidayClasses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111160031545_Plastics.cs" />
+    <Compile Include="Migrations\202111160031545_Plastics.Designer.cs">
+      <DependentUpon>202111160031545_Plastics.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Arts_Crafts\ArtsAndCrafts.cs" />
     <Compile Include="Models\Arts_Crafts\Arts_Crafts_A_C.cs" />
@@ -191,6 +198,9 @@
     <Compile Include="Models\Misc\Misc_P.cs" />
     <Compile Include="Models\Misc\Misc_Q_S.cs" />
     <Compile Include="Models\Misc\Misc_T_Z.cs" />
+    <Compile Include="Models\Plastics\Plastics.cs" />
+    <Compile Include="Models\Plastics\Products.cs" />
+    <Compile Include="Models\Plastics\Programs.cs" />
     <Compile Include="Models\School_Office\SchoolAndOffice.cs" />
     <Compile Include="Models\School_Office\School_Office_A_B.cs" />
     <Compile Include="Models\School_Office\School_Office_C_D.cs" />
@@ -363,10 +373,6 @@
     <Content Include="Views\Textiles_W_Z\Details.cshtml" />
     <Content Include="Views\Textiles_W_Z\Edit.cshtml" />
     <Content Include="Views\Textiles_W_Z\Index.cshtml" />
-    <Content Include="Views\Holidays\Create.cshtml" />
-    <Content Include="Views\Holidays\Delete.cshtml" />
-    <Content Include="Views\Holidays\Details.cshtml" />
-    <Content Include="Views\Holidays\Edit.cshtml" />
     <Content Include="Views\Holidays\Index.cshtml" />
     <Content Include="Views\Halloweens\Create.cshtml" />
     <Content Include="Views\Halloweens\Delete.cshtml" />
@@ -393,10 +399,19 @@
     <Content Include="Views\XmasandNewYears\Details.cshtml" />
     <Content Include="Views\XmasandNewYears\Edit.cshtml" />
     <Content Include="Views\XmasandNewYears\Index.cshtml" />
+    <Content Include="Views\Plastics\Index.cshtml" />
+    <Content Include="Views\Programs\Create.cshtml" />
+    <Content Include="Views\Programs\Delete.cshtml" />
+    <Content Include="Views\Programs\Details.cshtml" />
+    <Content Include="Views\Programs\Edit.cshtml" />
+    <Content Include="Views\Programs\Index.cshtml" />
+    <Content Include="Views\Products\Create.cshtml" />
+    <Content Include="Views\Products\Delete.cshtml" />
+    <Content Include="Views\Products\Details.cshtml" />
+    <Content Include="Views\Products\Edit.cshtml" />
+    <Content Include="Views\Products\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\Plastics\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -416,6 +431,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111152024540_HolidayClasses.resx">
       <DependentUpon>202111152024540_HolidayClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111160031545_Plastics.resx">
+      <DependentUpon>202111160031545_Plastics.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
