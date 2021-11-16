@@ -157,6 +157,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111160012042_db.cs" />
+    <Compile Include="Migrations\202111160012042_db.Designer.cs">
+      <DependentUpon>202111160012042_db.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Arts_Crafts\ArtsAndCrafts.cs" />
     <Compile Include="Models\Arts_Crafts\Arts_Crafts_A_C.cs" />
     <Compile Include="Models\Arts_Crafts\Arts_Crafts_D_O.cs" />
@@ -360,6 +365,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202111160012042_db.resx">
+      <DependentUpon>202111160012042_db.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
