@@ -59,7 +59,7 @@
 
                                 <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Edit", "Arts_Crafts_A_C", new { id = item.Arts_Crafts_A_C_ID } )'">Edit</button> |
                                 <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Details", "Arts_Crafts_A_C", new { id = item.Arts_Crafts_A_C_ID } )'">Details</button> |
-                                <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Delete", "Arts_Crafts_A_C", new { id = item.Arts_Crafts_A_C_ID } )'">Delete</button> 
+                                <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Delete", "Arts_Crafts_A_C", new { id = item.Arts_Crafts_A_C_ID } )'">Delete</button>
                             </td>
                         </tr>
                     }
@@ -67,6 +67,9 @@
                 </table>
 
             </div>
+        </div>
+        <div>
+            <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Index", "ArtsAndCrafts" )'">Back to list</button>
         </div>
     </body>
 </html>

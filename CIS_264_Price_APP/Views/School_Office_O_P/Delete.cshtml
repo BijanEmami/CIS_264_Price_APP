@@ -8,49 +8,66 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Delete</title>
+    <title> Arts/Crafts </title>
+    <meta charset="utf-8">
+    <link href="~/Styles/StyleSheet1.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TBD(L)">
+
 </head>
 <body>
-    <h3>Are you sure you want to delete this?</h3>
-    <div>
-        <h4>School_Office_O_P</h4>
-        <hr />
-        <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.Category)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Category)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Name)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Name)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Price)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Price)
-            </dd>
-    
-        </dl>
-    
-        @using (Html.BeginForm()) {
-            @Html.AntiForgeryToken()
-    
-            <div class="form-actions no-color">
-                <input type="submit" value="Delete" class="btn btn-default" /> |
-                @Html.ActionLink("Back to List", "Index")
+    <header>
+
+        <img src="~/Images/ScrapsKC_logo-01small.png" />
+    </header>
+    <div id="wrapper">
+        <h2>Delete</h2>
+        <div id="content">
+            <h3>Are you sure you want to delete this?</h3>
+            <div>
+
+
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Category)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Category)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Price)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Price)
+                    </dd>
+
+                </dl>
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Delete" class="btn btn-default" />
+
+                    </div>
+                }
             </div>
-        }
+        </div>
+    </div>
+    <div>
+        @Html.ActionLink("Back to List", "Index")
     </div>
 </body>
 </html>
