@@ -1,0 +1,40 @@
+﻿@model IEnumerable<CIS_264_Price_APP.Models.Plastics.Plastics>
+
+@{
+    ViewBag.Title = "Plastics";
+}
+
+<!DOCTYPE html>
+<!-- 10/03/2021 -->
+<html lang="en">
+<head>
+    <title> Plastics </title>
+    <meta charset="utf-8">
+
+    <link href="~/Styles/StyleSheet1.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TBD(L)">
+
+</head>
+
+<
+
+
+<body>
+    <header>
+
+        <img src="~/Images/ScrapsKC_logo-01small.png" />
+    </header>
+    <div id="wrapper">
+        <h1>Plastics</h1>
+        <div id="content">
+
+            <button class="plastics large" id="plastics" type="button" onclick="location.href='@Url.Action("Index", "Products" )'">Products</button>
+
+            <button class="plastics large" id="plastics" type="button" onclick="location.href='@Url.Action("Index", "Programs" )'">Programs</button>
+
+           
+        </div>
+    </div>
+</body>
+</html>

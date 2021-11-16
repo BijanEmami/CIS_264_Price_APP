@@ -70,5 +70,23 @@ namespace CIS_264_Price_APP.Data
         public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Textiles.Textiles_T_V> Textiles_T_V { get; set; }
 
         public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Textiles.Textiles_W_Z> Textiles_W_Z { get; set; }
+
+        public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Holidays.Holidays> Holidays { get; set; }
+
+        public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Holidays.Halloween> Halloweens { get; set; }
+
+        public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Holidays.July4th> July4th { get; set; }
+
+        public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Holidays.Valentines> Valentines { get; set; }
+
+        public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Holidays.St> Sts { get; set; }
+
+        public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Holidays.XmasandNewYear> XmasandNewYears { get; set; }
+
+        public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Plastics.Plastics> Plastics { get; set; }
+
+        public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Plastics.Programs> Programs { get; set; }
+
+        public System.Data.Entity.DbSet<CIS_264_Price_APP.Models.Plastics.Products> Products { get; set; }
     }
 }
