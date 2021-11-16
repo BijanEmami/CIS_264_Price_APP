@@ -10,7 +10,9 @@ namespace CIS_264_Price_APP.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+
             ContextKey = "CIS_264_Price_APP.Data.CIS_264_Price_APPContext";
+
         }
 
         protected override void Seed(CIS_264_Price_APP.Data.CIS_264_Price_APPContext context)

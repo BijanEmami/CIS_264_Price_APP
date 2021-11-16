@@ -166,6 +166,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+
     <Compile Include="Migrations\202111031556328_InitialCreate.cs" />
     <Compile Include="Migrations\202111031556328_InitialCreate.Designer.cs">
       <DependentUpon>202111031556328_InitialCreate.cs</DependentUpon>
@@ -177,6 +178,11 @@
     <Compile Include="Migrations\202111160031545_Plastics.cs" />
     <Compile Include="Migrations\202111160031545_Plastics.Designer.cs">
       <DependentUpon>202111160031545_Plastics.cs</DependentUpon>
+
+    <Compile Include="Migrations\202111160012042_db.cs" />
+    <Compile Include="Migrations\202111160012042_db.Designer.cs">
+      <DependentUpon>202111160012042_db.cs</DependentUpon>
+
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Arts_Crafts\ArtsAndCrafts.cs" />
@@ -427,6 +433,7 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+
     <EmbeddedResource Include="Migrations\202111031556328_InitialCreate.resx">
       <DependentUpon>202111031556328_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
@@ -435,6 +442,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111160031545_Plastics.resx">
       <DependentUpon>202111160031545_Plastics.cs</DependentUpon>
+
+    <EmbeddedResource Include="Migrations\202111160012042_db.resx">
+      <DependentUpon>202111160012042_db.cs</DependentUpon>
+
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
