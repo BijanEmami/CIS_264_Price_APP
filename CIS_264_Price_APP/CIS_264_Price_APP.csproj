@@ -132,6 +132,12 @@
     <Compile Include="Controllers\ArtsAndCraftsControllers\Arts_Crafts_P_QController.cs" />
     <Compile Include="Controllers\ArtsAndCraftsControllers\Arts_Crafts_R_SController.cs" />
     <Compile Include="Controllers\ArtsAndCraftsControllers\Arts_Crafts_T_ZController.cs" />
+    <Compile Include="Controllers\HolidaysControllers\HalloweensController.cs" />
+    <Compile Include="Controllers\HolidaysControllers\HolidaysController.cs" />
+    <Compile Include="Controllers\HolidaysControllers\July4thController.cs" />
+    <Compile Include="Controllers\HolidaysControllers\StsController.cs" />
+    <Compile Include="Controllers\HolidaysControllers\ValentinesController.cs" />
+    <Compile Include="Controllers\HolidaysControllers\XmasandNewYearsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MiscellaneousControllers\MiscellaneousController.cs" />
     <Compile Include="Controllers\MiscellaneousControllers\Misc_A_FController.cs" />
@@ -157,12 +163,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111031556328_InitialCreate.cs" />
+    <Compile Include="Migrations\202111031556328_InitialCreate.Designer.cs">
+      <DependentUpon>202111031556328_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111152024540_HolidayClasses.cs" />
+    <Compile Include="Migrations\202111152024540_HolidayClasses.Designer.cs">
+      <DependentUpon>202111152024540_HolidayClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Arts_Crafts\ArtsAndCrafts.cs" />
     <Compile Include="Models\Arts_Crafts\Arts_Crafts_A_C.cs" />
     <Compile Include="Models\Arts_Crafts\Arts_Crafts_D_O.cs" />
     <Compile Include="Models\Arts_Crafts\Arts_Crafts_P_Q.cs" />
     <Compile Include="Models\Arts_Crafts\Arts_Crafts_R_S.cs" />
     <Compile Include="Models\Arts_Crafts\Arts_Crafts_T_Z.cs" />
+    <Compile Include="Models\Holidays\Halloween.cs" />
+    <Compile Include="Models\Holidays\Holidays.cs" />
+    <Compile Include="Models\Holidays\July4th.cs" />
+    <Compile Include="Models\Holidays\St.PatricksandEaster.cs" />
+    <Compile Include="Models\Holidays\Valentines.cs" />
+    <Compile Include="Models\Holidays\XmasandNewYear.cs" />
     <Compile Include="Models\Misc\Miscellaneous.cs" />
     <Compile Include="Models\Misc\Misc_A_F.cs" />
     <Compile Include="Models\Misc\Misc_G_L.cs" />
@@ -342,9 +363,38 @@
     <Content Include="Views\Textiles_W_Z\Details.cshtml" />
     <Content Include="Views\Textiles_W_Z\Edit.cshtml" />
     <Content Include="Views\Textiles_W_Z\Index.cshtml" />
+    <Content Include="Views\Holidays\Create.cshtml" />
+    <Content Include="Views\Holidays\Delete.cshtml" />
+    <Content Include="Views\Holidays\Details.cshtml" />
+    <Content Include="Views\Holidays\Edit.cshtml" />
+    <Content Include="Views\Holidays\Index.cshtml" />
+    <Content Include="Views\Halloweens\Create.cshtml" />
+    <Content Include="Views\Halloweens\Delete.cshtml" />
+    <Content Include="Views\Halloweens\Details.cshtml" />
+    <Content Include="Views\Halloweens\Edit.cshtml" />
+    <Content Include="Views\Halloweens\Index.cshtml" />
+    <Content Include="Views\July4th\Create.cshtml" />
+    <Content Include="Views\July4th\Delete.cshtml" />
+    <Content Include="Views\July4th\Details.cshtml" />
+    <Content Include="Views\July4th\Edit.cshtml" />
+    <Content Include="Views\July4th\Index.cshtml" />
+    <Content Include="Views\Valentines\Create.cshtml" />
+    <Content Include="Views\Valentines\Delete.cshtml" />
+    <Content Include="Views\Valentines\Details.cshtml" />
+    <Content Include="Views\Valentines\Edit.cshtml" />
+    <Content Include="Views\Valentines\Index.cshtml" />
+    <Content Include="Views\Sts\Create.cshtml" />
+    <Content Include="Views\Sts\Delete.cshtml" />
+    <Content Include="Views\Sts\Details.cshtml" />
+    <Content Include="Views\Sts\Edit.cshtml" />
+    <Content Include="Views\Sts\Index.cshtml" />
+    <Content Include="Views\XmasandNewYears\Create.cshtml" />
+    <Content Include="Views\XmasandNewYears\Delete.cshtml" />
+    <Content Include="Views\XmasandNewYears\Details.cshtml" />
+    <Content Include="Views\XmasandNewYears\Edit.cshtml" />
+    <Content Include="Views\XmasandNewYears\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\Holidays\" />
     <Folder Include="Models\Plastics\" />
   </ItemGroup>
   <ItemGroup>
@@ -359,6 +409,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202111031556328_InitialCreate.resx">
+      <DependentUpon>202111031556328_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111152024540_HolidayClasses.resx">
+      <DependentUpon>202111152024540_HolidayClasses.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

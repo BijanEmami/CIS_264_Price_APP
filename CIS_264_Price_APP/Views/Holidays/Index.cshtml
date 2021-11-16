@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CIS_264_Price_APP.Models.Holidays.Holidays>
+
+@{
+    ViewBag.Title = "Holidays";
+}
+
+<!DOCTYPE html>
+<!-- 10/03/2021 -->
+<html lang="en">
+<head>
+    <title> Holidays </title>
+    <meta charset="utf-8">
+
+    <link href="~/Styles/StyleSheet1.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TBD(L)">
+
+</head>
+
+<
+
+
+<body>
+    <header>
+
+        <img src="~/Images/ScrapsKC_logo-01small.png" />
+    </header>
+    <div id="wrapper">
+        <h1>Holidays</h1>
+        <div id="content">
+
+            <button class="holiday large" id="holiday" type="button" onclick="location.href='@Url.Action("Index", "Valentines" )'">Valentines</button>
+
+            <button class="holiday large" id="holiday" type="button" onclick="location.href='@Url.Action("Index", "St" )'">St. Patricks and Easter</button>
+
+            <button class="holiday large" id="holiday" type="button" onclick="location.href='@Url.Action("Index", "July4th" )'">July 4th</button>
+
+            <button class="holiday large" id="holiday" type="button" onclick="location.href='@Url.Action("Index", "Halloween" )'">Halloween</button>
+
+            <button class="holiday large" id="holiday" type="button" onclick="location.href='@Url.Action("Index", "XmasandNewYear" )'">Xmas and New Year</button>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
