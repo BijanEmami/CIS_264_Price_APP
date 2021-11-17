@@ -14,7 +14,6 @@ body {
     padding-bottom: 1.5em;
     background-color: white;
     margin: auto;
-    /* display: inline-block;*/
 }
 
 /* Formats buttons on page 
@@ -77,6 +76,10 @@ th {
     width: 15%;
 }
 
+table {
+    table-layout: fixed;
+}
+
 #content input {
     margin: 0 0.5em 0.5em 0.5em;
 }
@@ -132,6 +135,12 @@ footer {
     text-decoration: underline;
 }
 
+.disable {
+    visibility: hidden;
+    display: none;
+    width: 0;
+}
+
 /* unique background-color of each button */
 
 .arts {
@@ -183,7 +192,7 @@ footer {
 }
 
 .archived {
-    background-color: #eee; /*grey*/
+    background-color: #eee; /*gray*/
 }
 
 #create button {
