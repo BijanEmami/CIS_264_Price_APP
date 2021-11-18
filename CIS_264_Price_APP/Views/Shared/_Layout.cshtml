@@ -8,7 +8,15 @@
 
 </head>
 <body>
+    <div id="loginButton">
+        <button class="" id="login">Login</button>
+        <button class="disable" id="logout">Logout</button>
+    </div>
+    <header>
+        <a href='../Home'> <img src="~/Images/ScrapsKC_logo-01small.png" /> </a>
+    </header>
     @RenderBody()
     @RenderSection("scripts", required: false)
+    <footer>&copy; 2021</footer>
 </body>
 </html>
