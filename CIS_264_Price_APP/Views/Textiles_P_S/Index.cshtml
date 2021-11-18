@@ -24,7 +24,7 @@
         <h1>P - S</h1>
         <div id="content">
             <p>
-                <button class="textile" id="textile" type="button" onclick="location.href='@Url.Action("Create", "Textiles_P_S" )'">Create</button>
+                <button class="protected disable" id="textile" type="button" onclick="location.href='@Url.Action("Create", "Textiles_P_S" )'">Create</button>
             </p>
             <table class="table">
                 <tr>
@@ -54,9 +54,9 @@
                         </td>
                         <td>
 
-                            <button class="textile" id="textile" type="button" onclick="location.href='@Url.Action("Edit", "Textiles_P_S", new { id = item.Textiles_P_S_ID } )'">Edit</button> |
-                            <button class="textile" id="textile" type="button" onclick="location.href='@Url.Action("Details", "Textiles_P_S", new { id = item.Textiles_P_S_ID } )'">Details</button> |
-                            <button class="textile" id="textile" type="button" onclick="location.href='@Url.Action("Delete", "Textiles_P_S", new { id = item.Textiles_P_S_ID } )'">Delete</button>
+                            <button class="protected disable" id="textile" type="button" onclick="location.href='@Url.Action("Edit", "Textiles_P_S", new { id = item.Textiles_P_S_ID } )'">Edit</button> |
+                            <button class="" id="textile" type="button" onclick="location.href='@Url.Action("Details", "Textiles_P_S", new { id = item.Textiles_P_S_ID } )'">Details</button> |
+                            <button class="protected disable" id="textile" type="button" onclick="location.href='@Url.Action("Delete", "Textiles_P_S", new { id = item.Textiles_P_S_ID } )'">Delete</button>
                         </td>
                     </tr>
                 }

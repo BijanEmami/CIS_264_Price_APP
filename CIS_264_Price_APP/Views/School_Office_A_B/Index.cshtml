@@ -24,7 +24,7 @@
         <h1>A - B</h1>
         <div id="content">
             <p>
-                <button class="school" id="school" type="button" onclick="location.href='@Url.Action("Create", "School_Office_A_B" )'">Create</button>
+                <button class="protected disable" id="school" type="button" onclick="location.href='@Url.Action("Create", "School_Office_A_B" )'">Create</button>
             </p>
             <table class="table">
                 <tr>
@@ -54,9 +54,9 @@
                         </td>
                         <td>
 
-                            <button class="school" id="school" type="button" onclick="location.href='@Url.Action("Edit", "School_Office_A_B", new { id = item.School_Office_A_B_ID } )'">Edit</button> |
-                            <button class="school" id="school" type="button" onclick="location.href='@Url.Action("Details", "School_Office_A_B", new { id = item.School_Office_A_B_ID } )'">Details</button> |
-                            <button class="school" id="school" type="button" onclick="location.href='@Url.Action("Delete", "School_Office_A_B", new { id = item.School_Office_A_B_ID } )'">Delete</button>
+                            <button class="protected disable" id="school" type="button" onclick="location.href='@Url.Action("Edit", "School_Office_A_B", new { id = item.School_Office_A_B_ID } )'">Edit</button> |
+                            <button class="" id="school" type="button" onclick="location.href='@Url.Action("Details", "School_Office_A_B", new { id = item.School_Office_A_B_ID } )'">Details</button> |
+                            <button class="protected disable" id="school" type="button" onclick="location.href='@Url.Action("Delete", "School_Office_A_B", new { id = item.School_Office_A_B_ID } )'">Delete</button>
                         </td>
                     </tr>
                 }

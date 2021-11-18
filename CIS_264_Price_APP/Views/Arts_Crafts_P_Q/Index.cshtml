@@ -24,7 +24,7 @@
         <h1>P - Q</h1>
         <div id="content">
             <p>
-                <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Create", "Arts_Crafts_P_Q" )'">Create</button>
+                <button class="protected disable" id="arts" type="button" onclick="location.href='@Url.Action("Create", "Arts_Crafts_P_Q" )'">Create</button>
             </p>
             <table class="table">
                 <tr>
@@ -54,9 +54,9 @@
                         </td>
                         <td>
 
-                            <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Edit", "Arts_Crafts_P_Q", new { id = item.Arts_Crafts_P_Q_ID } )'">Edit</button> |
-                            <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Details", "Arts_Crafts_P_Q", new { id = item.Arts_Crafts_P_Q_ID } )'">Details</button> |
-                            <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Delete", "Arts_Crafts_P_Q", new { id = item.Arts_Crafts_P_Q_ID } )'">Delete</button>
+                            <button class="protected disable" id="arts" type="button" onclick="location.href='@Url.Action("Edit", "Arts_Crafts_P_Q", new { id = item.Arts_Crafts_P_Q_ID } )'">Edit</button> |
+                            <button class="" id="arts" type="button" onclick="location.href='@Url.Action("Details", "Arts_Crafts_P_Q", new { id = item.Arts_Crafts_P_Q_ID } )'">Details</button> |
+                            <button class="protected disable" id="arts" type="button" onclick="location.href='@Url.Action("Delete", "Arts_Crafts_P_Q", new { id = item.Arts_Crafts_P_Q_ID } )'">Delete</button>
                         </td>
                     </tr>
                 }

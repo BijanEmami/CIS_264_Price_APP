@@ -22,7 +22,7 @@
             <h1>Arts and Crafts</h1>
             <h1>A - C</h1>
             <div id="content">
-                <p>
+                <p class="protected disable">
                     <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Create", "Arts_Crafts_A_C" )'">Create</button>
                 </p>
                 <table class="table">
@@ -41,23 +41,24 @@
 
                     @foreach (var item in Model)
                     {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Category)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Name)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Price)
-                            </td>
-                            <td>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
 
-                                <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Edit", "Arts_Crafts_A_C", new { id = item.Arts_Crafts_A_C_ID } )'">Edit</button> |
-                                <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Details", "Arts_Crafts_A_C", new { id = item.Arts_Crafts_A_C_ID } )'">Details</button> |
-                                <button class="arts" id="arts" type="button" onclick="location.href='@Url.Action("Delete", "Arts_Crafts_A_C", new { id = item.Arts_Crafts_A_C_ID } )'">Delete</button>
-                            </td>
-                        </tr>
+                        <button class="protected disable" id="arts" type="button" onclick="location.href='@Url.Action("Edit", "Arts_Crafts_A_C", new { id = item.Arts_Crafts_A_C_ID } )'">Edit</button> |
+                        <button class="" id="arts" type="button" onclick="location.href='@Url.Action("Details", "Arts_Crafts_A_C", new { id = item.Arts_Crafts_A_C_ID } )'">Details</button> |
+                        <button class="protected disable" id="arts" type="button" onclick="location.href='@Url.Action("Delete", "Arts_Crafts_A_C", new { id = item.Arts_Crafts_A_C_ID } )'">Delete</button>
+                    </td>
+                    <td class="protected disable">Archive<input class="archive protected disable" type="checkbox" name="archive" value="Archived"></td>
+                </tr>
                     }
 
                 </table>

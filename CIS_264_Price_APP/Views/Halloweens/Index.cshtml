@@ -24,7 +24,7 @@
         <h1>Halloween</h1>
         <div id="content">
             <p>
-                <button class="holiday" id="holiday" type="button" onclick="location.href='@Url.Action("Create", "Halloweens" )'">Create</button>
+                <button class="protected disable" id="holiday" type="button" onclick="location.href='@Url.Action("Create", "Halloweens" )'">Create</button>
             </p>
             <table class="table">
                 <tr>
@@ -54,9 +54,9 @@
                         </td>
                         <td>
 
-                            <button class="holiday" id="holiday" type="button" onclick="location.href='@Url.Action("Edit", "Halloweens", new { id = item.Halloween_ID } )'">Edit</button> |
-                            <button class="holiday" id="holiday" type="button" onclick="location.href='@Url.Action("Details", "Halloweens", new { id = item.Halloween_ID } )'">Details</button> |
-                            <button class="holiday" id="holiday" type="button" onclick="location.href='@Url.Action("Delete", "Halloweens", new { id = item.Halloween_ID } )'">Delete</button>
+                            <button class="protected disable" id="holiday" type="button" onclick="location.href='@Url.Action("Edit", "Halloweens", new { id = item.Halloween_ID } )'">Edit</button> |
+                            <button class="" id="holiday" type="button" onclick="location.href='@Url.Action("Details", "Halloweens", new { id = item.Halloween_ID } )'">Details</button> |
+                            <button class="protected disable" id="holiday" type="button" onclick="location.href='@Url.Action("Delete", "Halloweens", new { id = item.Halloween_ID } )'">Delete</button>
                         </td>
                     </tr>
                 }

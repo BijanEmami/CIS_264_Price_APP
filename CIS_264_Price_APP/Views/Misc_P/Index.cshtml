@@ -24,7 +24,7 @@
         <h1>P</h1>
         <div id="content">
             <p>
-                <button class="misc" id="misc" type="button" onclick="location.href='@Url.Action("Create", "Misc_P" )'">Create</button>
+                <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Create", "Misc_P" )'">Create</button>
             </p>
             <table class="table">
                 <tr>
@@ -54,9 +54,9 @@
                         </td>
                         <td>
 
-                            <button class="misc" id="misc" type="button" onclick="location.href='@Url.Action("Edit", "Misc_P", new { id = item.Misc_P_ID } )'">Edit</button> |
-                            <button class="misc" id="misc" type="button" onclick="location.href='@Url.Action("Details", "Misc_P", new { id = item.Misc_P_ID } )'">Details</button> |
-                            <button class="misc" id="misc" type="button" onclick="location.href='@Url.Action("Delete", "Misc_P", new { id = item.Misc_P_ID } )'">Delete</button>
+                            <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Edit", "Misc_P", new { id = item.Misc_P_ID } )'">Edit</button> |
+                            <button class="" id="misc" type="button" onclick="location.href='@Url.Action("Details", "Misc_P", new { id = item.Misc_P_ID } )'">Details</button> |
+                            <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Delete", "Misc_P", new { id = item.Misc_P_ID } )'">Delete</button>
                         </td>
                     </tr>
                 }
