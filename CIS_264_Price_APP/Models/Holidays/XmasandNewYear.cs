@@ -13,7 +13,7 @@ namespace CIS_264_Price_APP.Models.Holidays
         public string Category { get; set; }
 
         public string Name { get; set; }
-        public decimal Price { get; set; }
+        public string Price { get; set; }
         public virtual Holidays Holidays { get; set; }
     }
 }

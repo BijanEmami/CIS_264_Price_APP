@@ -12,7 +12,7 @@ namespace CIS_264_Price_APP.Models.School_Office
         public int School_Office_C_D_ID { get; set; }
         public string Category { get; set; }
         public string Name { get; set; }
-        public decimal Price { get; set; }
+        public string Price { get; set; }
         public virtual SchoolAndOffice SchoolAndOffice { get; set; }
     }
 }
