@@ -16,7 +16,15 @@
     <meta name="author" content="TBD(L)">
 </head>
 
-
+<div id="popup">
+    <div id="popupbox" name="login">
+        <span id="close">&times;</span>
+        <center>Password:</center>
+        <center><input id="password" name="password" type="password" size="14" /></center>
+        <center><input id="submit" type="submit" name="submit" value="Login" /></center>
+        <center><p id="placeholder"></p></center>
+    </div>
+</div>
 
 <body>
     <div id="wrapper">
@@ -33,19 +41,19 @@
 
 
             <button class="textile large" id="textile" type="button" onclick="location.href='@Url.Action("Index", "Textiles" )'">Textiles</button>
-          
-           
+
+
             <button class="misc large" id="misc" type="button" onclick="location.href='@Url.Action("Index", "Miscellaneous" )'">Misc</button>
 
-          
+
             <button class="plastics large" id="plastics" type="button" onclick="location.href='@Url.Action("Index", "Plastics" )'">Plastics</button>
 
-            
+
             <button class="holiday large" id="holiday" type="button" onclick="location.href='@Url.Action("Index", "Holidays" )'">Holidays</button>
 
 
 
-            
+
 
 
         </div>
