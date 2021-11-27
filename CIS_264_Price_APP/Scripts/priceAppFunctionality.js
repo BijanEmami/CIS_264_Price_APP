@@ -2,7 +2,8 @@ function login() {
   // tyler's code here for pop up
 
   close.onclick = function() {
-    document.getElementById('popup').style.display = "none";
+      document.getElementById('popup').style.display = "none";
+      placeholder.innerText = "";
   }
   if (loginBtn.id == "login") {
     document.getElementById('popupbox').style.visibility="visible";
@@ -13,14 +14,11 @@ function login() {
     toggleLogInOut();
   }
 
-  //while (result != "pwd" && result != null) result = document.getElementById("placeholder").innerText;
-
 }
 
 function validate() {
 
   let result = document.getElementById("password");
-  let placeholder = document.getElementById("placeholder");
 
   if (result.value == pw) {
     result.value = "";
@@ -37,7 +35,7 @@ function validate() {
 function toggleLogInOut() {
   //let protectedItems = document.querySelectorAll('.protected');
   //protectedItems.forEach(item => item.classList.toggle('disable'));
-  console.log(loginBtn.innerText);
+
   if (loginBtn.id == "login") {
     loginBtn.id="logout";
     loginBtn.innerText="Logout";
@@ -50,6 +48,8 @@ function toggleLogInOut() {
 }
 
 let loginBtn = document.getElementById('login');
-loginBtn.addEventListener('click', login);
 let close = document.getElementById('close');
 let pw = 'pwd';
+let placeholder = document.getElementById("placeholder");
+
+loginBtn.addEventListener('click', login);
