@@ -21,7 +21,9 @@ function validate() {
   let result = document.getElementById("password");
 
   if (result.value == pw) {
-    result.value = "";
+      result.value = "";
+      placeholder.innerText = "";
+
     document.getElementById('popupbox').style.visibility="hidden";
     document.getElementById('popup').style.display="none";
     toggleLogInOut();
