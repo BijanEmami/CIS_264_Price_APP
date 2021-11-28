@@ -206,10 +206,6 @@ footer {
     width: 0;
 }
 
-.archived {
-    background-color: lightgray;
-}
-
 /* unique background-color of each button */
 
 .arts {
@@ -312,14 +308,24 @@ a:active {
     text-decoration: none;
 }
 
-@media screen and ( max-width: 1100px ) {
+@media screen and ( max-width: 1024px ) {
     img.responsive {
-        width: 600px;
+        width: 200px;
     }
 }
 
-@media screen and ( max-width: 750px ) {
+@media screen and ( min-width:1025px ) and ( max-width: 1280px ) {
     img.responsive {
-        width: 300px;
+        width: 400px;
     }
+}
+
+@media screen and ( min-width: 1081px ) {
+    img.responsive {
+        width: 500px;
+    }
+}
+
+img.responsive {
+    height: auto;
 }
