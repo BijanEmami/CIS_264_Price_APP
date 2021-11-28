@@ -73,7 +73,7 @@ th {
     max-width: 75%;
 }
 
- 
+
 
 th {
     width: 15%;
@@ -111,81 +111,81 @@ footer {
 }
 
 #login {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  font-size: 20px;
-  background-color: white;
-  border-radius: 5px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 #logout {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  font-size: 20px;
-  background-color: white;
-  border-radius: 5px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 #loginButton {
-  float: right;
+    float: right;
 }
 
 #popup {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.6);
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6);
 }
 
-#popupbox{
-  margin: 0;
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-top: 15%;
-  padding-top: 18px;
-  width: 20%;
-  height: 90px;
-  position: relative;
-  background: #FBFBF0;
-  border: solid #000000 2px;
-  border-radius: 8px;
-  z-index: 1;
-  font-family: arial;
-  font-size: 20px;
-  visibility: hidden;
+#popupbox {
+    margin: 0;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 15%;
+    padding-top: 18px;
+    width: 20%;
+    height: 90px;
+    position: relative;
+    background: #FBFBF0;
+    border: solid #000000 2px;
+    border-radius: 8px;
+    z-index: 1;
+    font-family: arial;
+    font-size: 20px;
+    visibility: hidden;
 }
 
 #placeholder {
-  color: red;
+    color: red;
 }
 
 /* The Close Button */
 #close {
-  position: absolute;
-  color: #aaaaaa;
-  top: 0;
-  right: 5px;
-  font-size: 38px;
-  font-weight: bolder;
+    position: absolute;
+    color: #aaaaaa;
+    top: 0;
+    right: 5px;
+    font-size: 38px;
+    font-weight: bolder;
 }
 
-#close:hover,
-#close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
+    #close:hover,
+    #close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
 #or {
     color: white;
@@ -204,6 +204,10 @@ footer {
     visibility: hidden;
     display: none;
     width: 0;
+}
+
+.archived {
+    background-color: lightgray;
 }
 
 /* unique background-color of each button */
@@ -308,24 +312,14 @@ a:active {
     text-decoration: none;
 }
 
-@media screen and ( max-width: 1024px ) {
+@media screen and ( max-width: 1100px ) {
     img.responsive {
-        width: 200px;
+        width: 600px;
     }
 }
 
-@media screen and ( min-width:1025px ) and ( max-width: 1280px ) {
+@media screen and ( max-width: 750px ) {
     img.responsive {
-        width: 400px;
+        width: 300px;
     }
-}
-
-@media screen and ( min-width: 1081px ) {
-    img.responsive {
-        width: 500px;
-    }
-}
-
-img.responsive {
-    height: auto;
 }
