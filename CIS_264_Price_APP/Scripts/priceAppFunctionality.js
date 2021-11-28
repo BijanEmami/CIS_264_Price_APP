@@ -1,5 +1,4 @@
 function login() {
-  // tyler's code here for pop up
 
   close.onclick = function() {
       document.getElementById('popup').style.display = "none";
