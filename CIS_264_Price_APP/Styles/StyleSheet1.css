@@ -204,6 +204,10 @@ footer {
     width: 0;
 }
 
+.archived {
+    background-color: lightgray;
+}
+
 /* unique background-color of each button */
 
 .arts {
@@ -306,14 +310,19 @@ a:active {
     text-decoration: none;
 }
 
-@media screen and ( max-width: 1024px ) {
+@media screen and ( max-width: 1100px ) {
     img.responsive {
+<<<<<<< HEAD
         width: 300px;
+=======
+        width: 600px;
+>>>>>>> c7f31535583e478cab9b7e5626051dcdea680a22
     }
 }
 
-@media screen and ( min-width:1025px ) and ( max-width: 1280px ) {
+@media screen and ( max-width: 750px ) {
     img.responsive {
+<<<<<<< HEAD
         width: 600px;
     }
 }
@@ -326,4 +335,8 @@ a:active {
 
 img.responsive {
     height: auto;
+=======
+        width: 300px;
+    }
+>>>>>>> c7f31535583e478cab9b7e5626051dcdea680a22
 }
