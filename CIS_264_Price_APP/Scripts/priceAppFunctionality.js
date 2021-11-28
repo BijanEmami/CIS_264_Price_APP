@@ -35,8 +35,8 @@ function validate() {
 }
 
 function toggleLogInOut() {
-  //let protectedItems = document.querySelectorAll('.protected');
-  //protectedItems.forEach(item => item.classList.toggle('disable'));
+  let protectedItems = document.querySelectorAll('.protected');
+  protectedItems.forEach(item => item.classList.toggle('disable'));
 
   if (loginBtn.id == "login") {
     loginBtn.id="logout";
