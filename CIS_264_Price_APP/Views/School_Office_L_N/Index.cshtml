@@ -18,7 +18,7 @@
 </head>
 
 <body>
-
+    
     <div id="wrapper">
         <h1>School and Office</h1>
         <h1>L - N</h1>
@@ -54,8 +54,8 @@
                         </td>
                         <td>
 
-                            <button class="protected disable" id="school" type="button" onclick="location.href='@Url.Action("Edit", "School_Office_L_N", new { id = item.School_Office_L_N_ID } )'">Edit</button>
-
+                            <button class="protected disable" id="school" type="button" onclick="location.href='@Url.Action("Edit", "School_Office_L_N", new { id = item.School_Office_L_N_ID } )'">Edit</button> 
+                           
                             <button class="protected disable" id="school" type="button" onclick="location.href='@Url.Action("Delete", "School_Office_L_N", new { id = item.School_Office_L_N_ID } )'">Delete</button>
                         </td>
                     </tr>
@@ -65,7 +65,6 @@
 
         </div>
     </div>
-    <br />
     <div>
         <button class="school" id="school" type="button" onclick="location.href='@Url.Action("Index", "SchoolAndOffices" )'">Back to list</button>
     </div>

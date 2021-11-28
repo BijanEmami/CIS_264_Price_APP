@@ -18,7 +18,7 @@
 </head>
 
 <body>
-
+   
     <div id="wrapper">
         <h1>Textiles</h1>
         <h1>P - S</h1>
@@ -54,8 +54,8 @@
                         </td>
                         <td>
 
-                            <button class="protected disable" id="textile" type="button" onclick="location.href='@Url.Action("Edit", "Textiles_P_S", new { id = item.Textiles_P_S_ID } )'">Edit</button>
-
+                            <button class="protected disable" id="textile" type="button" onclick="location.href='@Url.Action("Edit", "Textiles_P_S", new { id = item.Textiles_P_S_ID } )'">Edit</button> 
+                           
                             <button class="protected disable" id="textile" type="button" onclick="location.href='@Url.Action("Delete", "Textiles_P_S", new { id = item.Textiles_P_S_ID } )'">Delete</button>
                         </td>
                     </tr>
@@ -65,7 +65,6 @@
 
         </div>
     </div>
-    <br />
     <div>
         <button class="textile" id="textile" type="button" onclick="location.href='@Url.Action("Index", "Textiles" )'">Back to list</button>
     </div>

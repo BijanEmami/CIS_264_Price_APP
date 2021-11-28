@@ -18,7 +18,7 @@
 </head>
 
 <body>
-
+    
     <div id="wrapper">
         <h1> Misc.</h1>
         <h1>T - Z</h1>
@@ -54,8 +54,8 @@
                         </td>
                         <td>
 
-                            <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Edit", "Misc_T_Z", new { id = item.Misc_T_Z_ID } )'">Edit</button>
-
+                            <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Edit", "Misc_T_Z", new { id = item.Misc_T_Z_ID } )'">Edit</button> 
+                           
                             <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Delete", "Misc_T_Z", new { id = item.Misc_T_Z_ID } )'">Delete</button>
                         </td>
                     </tr>
@@ -65,7 +65,6 @@
 
         </div>
     </div>
-    <br />
     <div>
         <button class="misc" id="misc" type="button" onclick="location.href='@Url.Action("Index", "Miscellaneous" )'">Back to list</button>
     </div>
