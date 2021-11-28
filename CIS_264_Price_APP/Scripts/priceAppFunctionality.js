@@ -20,7 +20,10 @@ function login() {
       }
       else if (sessionStorage.getItem("isAdmin") == "true"){
         sessionStorage.setItem("isAdmin", false);
-        toggleLogInOut();
+          toggleLogInOut();
+
+          let archiveBtn = document.querySelectorAll('.archive');
+          archiveBtn.forEach(btn => btn.addEventListener("change", toggleArchive));
       }
 
 }
@@ -33,7 +36,10 @@ function validate() {
     placeholder.innerText = "";
     document.getElementById('popupbox').style.visibility="hidden";
     document.getElementById('popup').style.display="none";
-    toggleLogInOut();
+      toggleLogInOut();
+
+      let archiveBtn = document.querySelectorAll('.archive');
+      archiveBtn.forEach(btn => btn.addEventListener("change", toggleArchive));
   }
   else {
     placeholder.innerText = "Incorrect Password";
@@ -54,6 +60,14 @@ function toggleLogInOut() {
       protectedItems.forEach(item => item.classList.add('disable'));
   }
 
+}
+
+function toggleArchive() {
+    if (this.checked) {
+        this.parentElement.parentElement.classList.add('protected', 'archived');
+    } else {
+        this.parentElement.parentElement.className = "";
+    }
 }
 
 let loginBtn = document.getElementById('login');
