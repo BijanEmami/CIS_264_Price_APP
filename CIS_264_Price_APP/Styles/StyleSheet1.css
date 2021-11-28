@@ -308,21 +308,13 @@ a:active {
 
 @media screen and ( max-width: 1024px ) {
     img.responsive {
-<<<<<<< HEAD
         width: 200px;
-=======
-        width: 300px;
->>>>>>> parent of 43a1769 (css)
     }
 }
 
 @media screen and ( min-width:1025px ) and ( max-width: 1280px ) {
     img.responsive {
-<<<<<<< HEAD
         width: 400px;
-=======
-        width: 600px;
->>>>>>> parent of 43a1769 (css)
     }
 }
 
