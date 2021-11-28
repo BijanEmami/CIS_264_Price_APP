@@ -8,6 +8,14 @@ function login() {
       if (sessionStorage.getItem("isAdmin") == "false") {
         document.getElementById('popupbox').style.visibility="visible";
         document.getElementById('popup').style.display="block";
+
+        result.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+               event.preventDefault();
+               document.getElementById("submit").click();
+            }
+        });
+
         document.getElementById('submit').addEventListener('click', validate);
       }
       else if (sessionStorage.getItem("isAdmin") == "true"){
