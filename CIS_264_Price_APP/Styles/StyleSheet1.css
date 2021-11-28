@@ -204,6 +204,10 @@ footer {
     width: 0;
 }
 
+.archived {
+    background-color: lightgray;
+}
+
 /* unique background-color of each button */
 
 .arts {

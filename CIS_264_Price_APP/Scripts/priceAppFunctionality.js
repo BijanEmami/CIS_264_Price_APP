@@ -35,7 +35,8 @@ function validate() {
 
 function toggleLogInOut() {
 
-  let protectedItems = document.querySelectorAll('.protected');
+    let protectedItems = document.querySelectorAll('.protected');
+    let archivedItems = document.querySelectorAll('.archived');
 
   if (sessionStorage.getItem("isAdmin") == "true") {
       loginBtn.innerText = "Logout";
