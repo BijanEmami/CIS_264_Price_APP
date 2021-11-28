@@ -295,6 +295,8 @@ footer {
     height: 200px;
     width: 200px;
     font-size: 30px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 a:visited {
