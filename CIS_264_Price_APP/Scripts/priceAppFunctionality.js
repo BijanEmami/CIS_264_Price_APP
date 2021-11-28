@@ -1,29 +1,28 @@
 function login() {
-  // tyler's code here for pop up
 
   close.onclick = function() {
-      document.getElementById('popup').style.display = "none";
-      placeholder.innerText = "";
+    placeholder.innerText = "";
+    document.getElementById('popup').style.display = "none";
+    result.value = "";
   }
-  if (loginBtn.id == "login") {
-    document.getElementById('popupbox').style.visibility="visible";
-    document.getElementById('popup').style.display="block";
-    document.getElementById('submit').addEventListener('click', validate);
-  }
-  else if (loginBtn.id == "logout"){
-    toggleLogInOut();
-  }
+      if (sessionStorage.getItem("isAdmin") == "false") {
+        document.getElementById('popupbox').style.visibility="visible";
+        document.getElementById('popup').style.display="block";
+        document.getElementById('submit').addEventListener('click', validate);
+      }
+      else if (sessionStorage.getItem("isAdmin") == "true"){
+        sessionStorage.setItem("isAdmin", false);
+        toggleLogInOut();
+      }
 
 }
 
 function validate() {
 
-  let result = document.getElementById("password");
-
   if (result.value == pw) {
-      result.value = "";
-      placeholder.innerText = "";
-
+    sessionStorage.setItem("isAdmin", true);
+    result.value = "";
+    placeholder.innerText = "";
     document.getElementById('popupbox').style.visibility="hidden";
     document.getElementById('popup').style.display="none";
     toggleLogInOut();
@@ -35,23 +34,31 @@ function validate() {
 }
 
 function toggleLogInOut() {
+
   let protectedItems = document.querySelectorAll('.protected');
   protectedItems.forEach(item => item.classList.toggle('disable'));
 
-  if (loginBtn.id == "login") {
-    loginBtn.id="logout";
+  if (sessionStorage.getItem("isAdmin") == "true") {
     loginBtn.innerText="Logout";
   }
-  else if (loginBtn.id == "logout"){
-    loginBtn.id="login";
+  else if (sessionStorage.getItem("isAdmin") == "false"){
     loginBtn.innerText="Login";
   }
-  console.log(loginBtn.innerText);
+
 }
 
 let loginBtn = document.getElementById('login');
+let result = document.getElementById("password");
+let placeholder = document.getElementById("placeholder");
 let close = document.getElementById('close');
 let pw = 'pwd';
-let placeholder = document.getElementById("placeholder");
+
+if (!sessionStorage.getItem("isAdmin")) {
+  sessionStorage.setItem("isAdmin", false);
+}
+
+if (sessionStorage.getItem("isAdmin") == "true") {
+  loginBtn.innerText="Logout";
+}
 
 loginBtn.addEventListener('click', login);
