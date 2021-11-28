@@ -63,7 +63,7 @@ h3 {
 
 table,
 td,
-th {
+th  {
     border-collapse: collapse;
     padding: 0.5em;
     margin: 1em;
@@ -72,8 +72,6 @@ th {
     margin-right: auto;
     max-width: 75%;
 }
-
-
 
 th {
     width: 15%;
