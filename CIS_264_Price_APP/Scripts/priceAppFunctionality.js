@@ -35,14 +35,15 @@ function validate() {
 
 function toggleLogInOut() {
 
-  //let protectedItems = document.querySelectorAll('.protected');
-  //protectedItems.forEach(item => item.classList.toggle('disable'));
+  let protectedItems = document.querySelectorAll('.protected');
 
   if (sessionStorage.getItem("isAdmin") == "true") {
-    loginBtn.innerText="Logout";
+      loginBtn.innerText = "Logout";
+      protectedItems.forEach(item => item.classList.remove('disable'));
   }
   else if (sessionStorage.getItem("isAdmin") == "false"){
-    loginBtn.innerText="Login";
+      loginBtn.innerText = "Login";
+      protectedItems.forEach(item => item.classList.add('disable'));
   }
 
 }

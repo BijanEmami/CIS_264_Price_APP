@@ -70,6 +70,7 @@ th {
     border: 1px #000 solid;
     margin-left: auto;
     margin-right: auto;
+    max-width: 75%;
 }
 
 th {
@@ -197,11 +198,11 @@ footer {
     text-decoration: underline;
 }
 
-/*.disable {
+.disable {
     visibility: hidden;
     display: none;
     width: 0;
-}*/
+}
 
 /* unique background-color of each button */
 
