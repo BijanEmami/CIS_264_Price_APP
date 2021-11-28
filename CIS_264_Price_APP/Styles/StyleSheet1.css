@@ -197,11 +197,11 @@ footer {
     text-decoration: underline;
 }
 
-.disable {
+/*.disable {
     visibility: hidden;
     display: none;
     width: 0;
-}
+}*/
 
 /* unique background-color of each button */
 
