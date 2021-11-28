@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    
+
     <div id="wrapper">
         <h1>Holidays</h1>
         <h1>Xmas and New Years</h1>
@@ -54,8 +54,8 @@
                         </td>
                         <td>
 
-                            <button class="protected disable" id="holiday" type="button" onclick="location.href='@Url.Action("Edit", "XmasandNewYear", new { id = item.XmasandNewYear_ID } )'">Edit</button> 
-                            
+                            <button class="protected disable" id="holiday" type="button" onclick="location.href='@Url.Action("Edit", "XmasandNewYear", new { id = item.XmasandNewYear_ID } )'">Edit</button>
+
                             <button class="protected disable" id="holiday" type="button" onclick="location.href='@Url.Action("Delete", "XmasandNewYear", new { id = item.XmasandNewYear_ID } )'">Delete</button>
                         </td>
                     </tr>
@@ -65,6 +65,7 @@
 
         </div>
     </div>
+    <br />
     <div>
         <button class="holiday" id="holiday" type="button" onclick="location.href='@Url.Action("Index", "Holidays" )'">Back to list</button>
     </div>
