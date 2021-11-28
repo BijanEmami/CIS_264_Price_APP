@@ -36,7 +36,6 @@ function validate() {
 function toggleLogInOut() {
 
     let protectedItems = document.querySelectorAll('.protected');
-    let archivedItems = document.querySelectorAll('.archived');
 
   if (sessionStorage.getItem("isAdmin") == "true") {
       loginBtn.innerText = "Logout";
@@ -45,6 +44,7 @@ function toggleLogInOut() {
   else if (sessionStorage.getItem("isAdmin") == "false"){
       loginBtn.innerText = "Login";
       protectedItems.forEach(item => item.classList.add('disable'));
+
   }
 
 }
