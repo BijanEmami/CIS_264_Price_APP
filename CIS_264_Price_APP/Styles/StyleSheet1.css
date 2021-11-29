@@ -1,4 +1,6 @@
-﻿html {
+﻿/* general styles */
+
+html {
     padding: 2em 2em 2em 2em;
     background-color: white;
 }
@@ -16,50 +18,29 @@ body {
     margin: auto;
 }
 
-/* Formats buttons on page
-.formbox {
-    width: 60%;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    padding-top: 0px;
-    padding-bottom: 15px;
-    border: 1px solid white;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.centerblock {
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-}
-
-.create {
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 10px;
-    margin-bottom: 1em;
-    height: 50px;
-    width: 50px;
-    font-size: 5px;
-}*/
-
 h1 {
     text-align: center;
     border-radius: 0.5em;
     background-color: #00b1c4;
     color: white;
     padding-top: 1em;
-    /*padding-bottom: 1em;*/
 }
 
 h3 {
     padding-top: 0;
     margin-top: 0;
 }
+
+footer {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 75%;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* table styles */
 
 table,
 td,
@@ -81,17 +62,13 @@ table {
     table-layout: fixed;
 }
 
+
+/* id styles */
+
 #content input {
     margin: 0 0.5em 0.5em 0.5em;
 }
 
-footer {
-    text-align: center;
-    padding-top: 1em;
-    font-size: 75%;
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", serif;
-}
 
 /* Formats back button */
 #wrapper {
@@ -107,6 +84,9 @@ footer {
     background-color: white;
     align-items: center;
 }
+
+
+/* styles used by JavaScript */
 
 #login {
     display: flex;
@@ -204,7 +184,9 @@ footer {
     color: red;
 }
 
+
 /* The Close Button */
+
 #close1, #close2 {
     position: absolute;
     color: #aaaaaa;
@@ -236,6 +218,18 @@ footer {
     text-decoration: underline;
 }
 
+#create button {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    height: 50px;
+    width: 50px;
+    font-size: 5px;
+    background-color: #98f991;
+}
+
+
 /* Formats how mouse interacts with the linked buttons */
 
 #wrapper a:link {
@@ -258,21 +252,36 @@ a:active {
     text-decoration: none;
 }
 
+
+/* Formats buttons on page */
+.menue {
+    margin-top: 1em;
+}
+
+.large {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-bottom: 1em;
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 .disable {
     visibility: hidden;
     display: none;
     width: 0;
 }
 
-/*.archived {
-    background-color: lightgray;
-}*/
+/* unique background-colors for each button/table */
 
 .archived {
-    background-color: #eee; /*gray*/
+    background-color: #eee; /*lightgray*/
 }
 
-/* unique background-color of each button */
 
 .arts {
     background-color: #FF6666; /*red*/
@@ -299,27 +308,27 @@ a:active {
 }
 
 .artsLight {
-    background-color: #FF6666; /*light red*/
+    background-color: #FF6666; /*red*/
 }
 
 .schoolLight {
-    background-color: #98f991; /*light green*/
+    background-color: #98f991; /*green*/
 }
 
 .textileLight {
-    background-color: lightblue; /*light blue*/
+    background-color: lightblue; /*blue*/
 }
 
 .holidayLight {
-    background-color: #f9cb9e; /*light orange*/
+    background-color: #f9cb9e; /*orange*/
 }
 
 .plasticsLight {
-    background-color: #f6f99e; /*light yellow*/
+    background-color: #f6f99e; /*yellow*/
 }
 
 .miscLight {
-    background-color: #f99eb9; /*light pink*/
+    background-color: #f99eb9; /*pink*/
 }
 
 .artsLight tr:nth-child(even) {
@@ -347,61 +356,7 @@ a:active {
     background-color: #ffbed9; /*light pink*/
 }
 
-/**/
-.artsLight tr:nth-child(even) {
-    /*background-color: #FFa6a6; /*extra light red*/
-}
-
-.schoolLight tr:nth-child(even) {
-    /*background-color: #d8ffd1; /*extra light green*/
-}
-
-.textileLight tr:nth-child(even) {
-    /*background-color: edffff; /*extra light blue*/
-}
-
-.holidayLight tr:nth-child(even) {
-    /*background-color: #ffffde; /*extra light orange*/
-}
-
-.plasticsLight tr:nth-child(even) {
-    /*background-color: #ffffae; /*extra light yellow*/
-}
-
-.miscLight tr:nth-child(even) {
-    /*background-color: #ffdef9; /*extra light pink*/
-}
-
-
-
-#create button {
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 10px;
-    margin-bottom: 1em;
-    height: 50px;
-    width: 50px;
-    font-size: 5px;
-    background-color: #98f991;
-}
-
-/* Formats buttons on page */
-.menue {
-    margin-top: 1em;
-}
-
-.large {
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 20px;
-    margin-bottom: 1em;
-    height: 200px;
-    width: 200px;
-    font-size: 30px;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
+/* end colors */
 
 
 /* media query break points */
