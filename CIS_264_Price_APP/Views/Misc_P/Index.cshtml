@@ -42,23 +42,25 @@
 
                 @foreach (var item in Model.OrderBy(x => x.Category))
                 {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Category)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Name)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Price)
-                        </td>
-                        <td>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                <td class="protected disable">Archive<input class="archive protected disable" type="checkbox" name="archive" value="Archived"></td>
+                <td class="protected disable">
 
-                            <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Edit", "Misc_P", new { id = item.Misc_P_ID } )'">Edit</button>
+                    <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Edit", "Misc_P", new { id = item.Misc_P_ID } )'">Edit</button>
 
-                            <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Delete", "Misc_P", new { id = item.Misc_P_ID } )'">Delete</button>
-                        </td>
-                    </tr>
+                    <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Delete", "Misc_P", new { id = item.Misc_P_ID } )'">Delete</button>
+                </td>
+            </tr>
                 }
 
             </table>
