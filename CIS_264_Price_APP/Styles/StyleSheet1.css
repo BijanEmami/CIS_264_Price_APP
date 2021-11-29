@@ -345,7 +345,7 @@ a:active {
 }
 
 .holidayLight tr:nth-child(even) {
-    background-color: #ffdbae; /*light orange*/
+    background-color: #ffdaad; /*light orange*/
 }
 
 .plasticsLight tr:nth-child(even) {
