@@ -62,6 +62,10 @@ table {
     table-layout: fixed;
 }
 
+th:nth-child(3) {
+    max-width: 15%;
+}
+
 
 /* id styles */
 
