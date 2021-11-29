@@ -284,7 +284,7 @@ button {
 }
 
 .schoolLight {
-    background-color: #98f991; /*green*/
+    background-color: #a8ffa1; /*green*/
 }
 
 .textileLight {
@@ -309,7 +309,7 @@ button {
 
 
 .schoolLight tr:nth-child(even) {
-    background-color: #a8ffa1; /*light green*/
+    background-color: #b8ffb1; /*light green*/
 }
 
 .textileLight tr:nth-child(even) {
