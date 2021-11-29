@@ -71,8 +71,8 @@ function toggleArchive() {
 }
 
 let loginBtn = document.getElementById('login');
-let result = document.getElementById("password");
-let placeholder = document.getElementById("placeholder");
+let result = document.getElementById('password');
+let placeholder = document.getElementById('placeholder');
 let close = document.getElementById('close');
 let pw = 'pwd';
 
