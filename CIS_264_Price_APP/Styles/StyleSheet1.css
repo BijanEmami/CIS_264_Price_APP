@@ -316,7 +316,7 @@ a:active {
 }
 
 .textileLight {
-    background-color: lightblue; /*blue*/
+    background-color: #add8e6; /*blue*/
 }
 
 .holidayLight {
@@ -332,28 +332,28 @@ a:active {
 }
 
 .artsLight tr:nth-child(even) {
-    background-color: #FF8686; /*light red*/
+    background-color: #FF7676; /*light red*/
 }
 
 
 .schoolLight tr:nth-child(even) {
-    background-color: #b8ffb1; /*light green*/
+    background-color: #a8ffa1; /*light green*/
 }
 
 .textileLight tr:nth-child(even) {
-    background-color: #ddffff; /*light blue*/
+    background-color: #bde8f6; /*light blue*/
 }
 
 .holidayLight tr:nth-child(even) {
-    background-color: #ffebae; /*light orange*/
+    background-color: #ffdbae; /*light orange*/
 }
 
 .plasticsLight tr:nth-child(even) {
-    background-color: #ffffbe; /*light yellow*/
+    background-color: #ffffae; /*light yellow*/
 }
 
 .miscLight tr:nth-child(even) {
-    background-color: #ffbed9; /*light pink*/
+    background-color: #ffaec9; /*light pink*/
 }
 
 /* end colors */
