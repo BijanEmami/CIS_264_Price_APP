@@ -133,7 +133,7 @@ table {
     margin-top: 15%;
     padding-top: 18px;
     width: 20%;
-    height: 125px;
+    height: 135px;
     position: relative;
     background: #FBFBF0;
     border: solid #000000 2px;
@@ -142,6 +142,10 @@ table {
     font-family: arial;
     font-size: 20px;
     visibility: hidden;
+}
+
+#submit {
+    margin-top: 17.5px;
 }
 
 #placeholder {
