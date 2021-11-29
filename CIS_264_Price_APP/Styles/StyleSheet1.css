@@ -198,14 +198,40 @@ footer {
     text-decoration: underline;
 }
 
+/* Formats how mouse interacts with the linked buttons */
+
+#wrapper a:link {
+    text-decoration: none;
+    background-color: green;
+    margin: 0 3em 0 3em;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
 .disable {
     visibility: hidden;
     display: none;
     width: 0;
 }
 
-.archived {
+/*.archived {
     background-color: lightgray;
+}*/
+
+.archived {
+    background-color: #eee; /*gray*/
 }
 
 /* unique background-color of each button */
@@ -235,32 +261,80 @@ footer {
 }
 
 .artsLight {
-    background-color: #FF6666; /*red*/
+    background-color: #FF6666; /*light red*/
 }
 
 .schoolLight {
-    background-color: #c8ffc1; /*green*/
+    background-color: #98f991; /*light green*/
 }
 
 .textileLight {
-    background-color: lightblue; /*blue*/
+    background-color: lightblue; /*light blue*/
 }
 
 .holidayLight {
-    background-color: #fffbce; /*orange*/
+    background-color: #f9cb9e; /*light orange*/
 }
 
 .plasticsLight {
-    background-color: #f6f99e; /*yellow*/
+    background-color: #f6f99e; /*light yellow*/
 }
 
 .miscLight {
-    background-color: #ffcee9; /*pink*/
+    background-color: #f99eb9; /*light pink*/
 }
 
-.archived {
-    background-color: #eee; /*gray*/
+.artsLight tr:nth-child(even) {
+    background-color: #FF8686; /*light red*/
 }
+
+
+.schoolLight tr:nth-child(even) {
+    background-color: #b8ffb1; /*light green*/
+}
+
+.textileLight tr:nth-child(even) {
+    background-color: #ddffff; /*light blue*/
+}
+
+.holidayLight tr:nth-child(even) {
+    background-color: #ffebae; /*light orange*/
+}
+
+.plasticsLight tr:nth-child(even) {
+    background-color: #ffffbe; /*light yellow*/
+}
+
+.miscLight tr:nth-child(even) {
+    background-color: #ffbed9; /*light pink*/
+}
+
+/**/
+.artsLight tr:nth-child(even) {
+    /*background-color: #FFa6a6; /*extra light red*/
+}
+
+.schoolLight tr:nth-child(even) {
+    /*background-color: #d8ffd1; /*extra light green*/
+}
+
+.textileLight tr:nth-child(even) {
+    /*background-color: edffff; /*extra light blue*/
+}
+
+.holidayLight tr:nth-child(even) {
+    /*background-color: #ffffde; /*extra light orange*/
+}
+
+.plasticsLight tr:nth-child(even) {
+    /*background-color: #ffffae; /*extra light yellow*/
+}
+
+.miscLight tr:nth-child(even) {
+    /*background-color: #ffdef9; /*extra light pink*/
+}
+
+
 
 #create button {
     display: inline-block;
@@ -271,15 +345,6 @@ footer {
     width: 50px;
     font-size: 5px;
     background-color: #98f991;
-}
-
-/* Formats how mouse interacts with the linked buttons */
-
-#wrapper a:link {
-    text-decoration: none;
-    background-color: green;
-    margin: 0 3em 0 3em;
-    color: black;
 }
 
 /* Formats buttons on page */
@@ -299,25 +364,18 @@ footer {
     margin-right: 1em;
 }
 
-a:visited {
-    text-decoration: none;
-    color: black;
-}
 
-a:hover {
-    text-decoration: none;
-}
 
-a:active {
-    text-decoration: none;
-}
+/* media query break points */
 
+/* medium size */
 @media screen and ( max-width: 1100px ) {
     img.responsive {
         width: 600px;
     }
 }
 
+/* small size */
 @media screen and ( max-width: 750px ) {
     img.responsive {
         width: 300px;
