@@ -23,6 +23,7 @@
             <h1>A - C</h1>
             <div id="content">
                 <p > 
+                    <!--button appears if logged in.  True for all create/edit/delete buttons-->
                     <button class="protected disable" id="arts" type="button" onclick="location.href='@Url.Action("Create", "Arts_Crafts_A_C" )'">Create</button>
                 </p>
                 <table class="table artsLight">
@@ -37,7 +38,7 @@
                             @Html.DisplayNameFor(model => model.Price)
                         </th>
                     </tr>
-
+                    <!--Alphabetically order by category-->
                     @foreach (var item in Model.OrderBy( x => x.Category))
                     {
                 <tr>
