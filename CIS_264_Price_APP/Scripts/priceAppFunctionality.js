@@ -82,6 +82,7 @@ function toggleArchive() {
     }
 }
 
+// additional variables
 let loginBtn = document.getElementById('login');
 let result = document.getElementById('password');
 let close = document.getElementById('close');
