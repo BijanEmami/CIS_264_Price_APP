@@ -37,7 +37,7 @@
                     <th>
                         @Html.DisplayNameFor(model => model.Price)
                     </th>
-                    <th></th>
+                    
                 </tr>
 
                 @foreach (var item in Model.OrderBy(x => x.Category))
@@ -52,7 +52,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Price)
                 </td>
-                <td>
+                
                 <td class="protected disable">Archive<input class="archive protected disable" type="checkbox" name="archive" value="Archived"></td>
                 <td class="protected disable">
 
