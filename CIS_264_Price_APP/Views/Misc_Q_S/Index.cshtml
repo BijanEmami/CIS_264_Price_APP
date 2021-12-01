@@ -42,21 +42,21 @@
 
                 @foreach (var item in Model.OrderBy(x => x.Category))
                 {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Category)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                </td>
-                <td class="protected disable" width="15%">
-                    <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Edit", "Misc_Q_S", new { id = item.Misc_Q_S_ID } )'">Edit</button>
-                    <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Delete", "Misc_Q_S", new { id = item.Misc_Q_S_ID } )'">Delete</button>
-                </td>
-            </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td class="protected disable" width="15%">
+                        <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Edit", "Misc_Q_S", new { id = item.Misc_Q_S_ID } )'">Edit</button>
+                        <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Delete", "Misc_Q_S", new { id = item.Misc_Q_S_ID } )'">Delete</button>
+                    </td>
+                </tr>
                 }
 
             </table>
