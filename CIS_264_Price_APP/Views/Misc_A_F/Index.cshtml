@@ -52,11 +52,8 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Price)
                 </td>
-                
                 <td class="protected disable">
-
                     <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Edit", "Misc_A_F", new { id = item.Misc_A_F_ID } )'">Edit</button>
-
                     <button class="protected disable" id="misc" type="button" onclick="location.href='@Url.Action("Delete", "Misc_A_F", new { id = item.Misc_A_F_ID } )'">Delete</button>
                 </td>
             </tr>
