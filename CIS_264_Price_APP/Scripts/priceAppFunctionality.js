@@ -108,3 +108,6 @@ if (sessionStorage.getItem("isAdmin") == "true") {
 
 // logout user or open login pop-up box when login/logout button is clicked
 loginBtn.addEventListener('click', login);
+
+
+// test
