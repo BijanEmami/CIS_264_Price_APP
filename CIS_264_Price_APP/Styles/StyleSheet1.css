@@ -62,8 +62,10 @@ table {
     table-layout: fixed;
 }
 
-.small{
+.small {
     max-width: 15%;
+    padding-left: -3em;
+    padding-right: -3em;
 }
 
 /* id styles */
