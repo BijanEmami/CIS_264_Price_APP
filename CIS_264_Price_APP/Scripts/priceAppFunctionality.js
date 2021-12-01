@@ -6,52 +6,60 @@
 
 // static password set here
 // change this value to change the password
-let pw = 'pwd';
+const pw = 'pwd';
 
 function login() {
-  close.onclick = function() {
-    placeholder.innerText = "";
-    document.getElementById('popup').style.display = "none";
-    result.value = "";
-  }
-      if (sessionStorage.getItem("isAdmin") == "false") {
+    // hides pop-up if user clicks 'x' button
+    close.onclick = function() {
+        placeholder.innerText = "";
+        document.getElementById('popup').style.display = "none";
+        result.value = "";
+    }
+    // displays pop-up for user login
+    if (sessionStorage.getItem("isAdmin") == "false") {
         document.getElementById('popupbox').style.visibility="visible";
         document.getElementById('popup').style.display = "block";
 
+        // allows use of enter key to for confirming password
         result.addEventListener("keyup", function (event) {
             if (event.keyCode === 13) {
                 event.preventDefault();
                 document.getElementById("submit").click();
             }
          });
-
+        // calls validate() when user clicks submit button
         document.getElementById('submit').addEventListener('click', validate);
-      }
-      else if (sessionStorage.getItem("isAdmin") == "true"){
+    }
+    // logs user out and hides archived items
+    else if (sessionStorage.getItem("isAdmin") == "true"){
         sessionStorage.setItem("isAdmin", false);
-          toggleLogInOut();
+        toggleLogInOut();
 
-          let archiveBtn = document.querySelectorAll('.archive');
-          archiveBtn.forEach(btn => btn.addEventListener("change", toggleArchive));
-      }
+        let archiveBtn = document.querySelectorAll('.archive');
+        archiveBtn.forEach(btn => btn.addEventListener("change", toggleArchive));
+    }
 
 }
 
 function validate() {
-  if (result.value == pw) {
-    sessionStorage.setItem("isAdmin", true);
-    result.value = "";
-    placeholder.innerText = "";
-    document.getElementById('popupbox').style.visibility="hidden";
-    document.getElementById('popup').style.display="none";
-      toggleLogInOut();
+    // checks if user enters correct password
+    // if correct, toggleLogInOut() is called 
+    // archived items are made visible
+    if (result.value == pw) {
+        sessionStorage.setItem("isAdmin", true);
+        result.value = "";
+        placeholder.innerText = "";
+        document.getElementById('popupbox').style.visibility="hidden";
+        document.getElementById('popup').style.display="none";
 
-      let archiveBtn = document.querySelectorAll('.archive');
-      archiveBtn.forEach(btn => btn.addEventListener("change", toggleArchive));
-  }
-  else {
+        toggleLogInOut();
+
+        let archiveBtn = document.querySelectorAll('.archive');
+        archiveBtn.forEach(btn => btn.addEventListener("change", toggleArchive));
+    }
+    else {
     placeholder.innerText = "Incorrect Password";
-  }
+    }
 
 }
 
@@ -86,7 +94,6 @@ function toggleArchive() {
 let loginBtn = document.getElementById('login');
 let result = document.getElementById('password');
 let close = document.getElementById('close');
-
 let placeholder = document.getElementById('placeholder');
 
 // check if user is logged in or out
