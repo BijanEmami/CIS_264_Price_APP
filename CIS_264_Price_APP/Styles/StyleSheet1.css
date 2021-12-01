@@ -62,8 +62,7 @@ table {
     table-layout: fixed;
 }
 
-th:nth-child(3),
-td:nth-child(4){
+.small{
     max-width: 15%;
 }
 
