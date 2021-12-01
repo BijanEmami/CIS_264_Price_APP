@@ -64,10 +64,9 @@ table {
 
 .small {
     max-width: 15%;
-    padding-left: -3em;
-    padding-right: -3em;
-    margin-left: -3em;
-    margin-right: -3em;
+}
+#small{
+    max-width: 15%;
 }
 
 /* id styles */
