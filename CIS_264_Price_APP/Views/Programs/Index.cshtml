@@ -53,8 +53,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Price)
                 </td>
-                
-                <td class="protected disable">Archive<input class="archive protected disable" type="checkbox" name="archive" value="Archived"></td>
+               
                 <td class="protected disable">
 
                     <button class="protected disable" id="plastics" type="button" onclick="location.href='@Url.Action("Edit", "Programs", new { id = item.Programs_ID } )'">Edit</button>
