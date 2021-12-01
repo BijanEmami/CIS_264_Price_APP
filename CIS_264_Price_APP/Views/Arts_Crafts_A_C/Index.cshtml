@@ -37,6 +37,7 @@
                         <th>
                             @Html.DisplayNameFor(model => model.Price)
                         </th>
+                        <th class="protected disable small"></th>
                     </tr>
                     <!--Alphabetically order by category-->
                     @foreach (var item in Model.OrderBy( x => x.Category))
