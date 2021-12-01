@@ -80,6 +80,7 @@ function toggleLogInOut() {
 
 }
 
+/*
 function toggleArchive() {
     // marks as archived when logged in and hides archived items when logged out
     if (this.checked) {
@@ -88,7 +89,7 @@ function toggleArchive() {
         // un-archive item
         this.parentElement.parentElement.className = "";
     }
-}
+}*/
 
 // additional variables
 let loginBtn = document.getElementById('login');
