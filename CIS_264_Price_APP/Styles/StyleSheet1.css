@@ -62,17 +62,8 @@ table {
     table-layout: fixed;
 }
 
-.small {
-    max-width: 15%;
-    background-color: yellow;
-}
-#small {
-    max-width: 15%;
-    background-color: green;
-}
 td:nth-child(4) {
     max-width: 15%;
-    background-color: blue;
 }
 
 /* id styles */
