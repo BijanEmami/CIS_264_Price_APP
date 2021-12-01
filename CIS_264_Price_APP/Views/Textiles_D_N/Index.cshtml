@@ -52,7 +52,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Price)
                 </td>
-                <td class="protected disable">
+                <td class="protected disable" width="15%">
                     <button class="protected disable" id="textile" type="button" onclick="location.href='@Url.Action("Edit", "Textiles_D_N", new { id = item.Textiles_D_N_ID } )'">Edit</button>
                     <button class="protected disable" id="textile" type="button" onclick="location.href='@Url.Action("Delete", "Textiles_D_N", new { id = item.Textiles_D_N_ID } )'">Delete</button>
                 </td>

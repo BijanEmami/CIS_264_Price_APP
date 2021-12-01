@@ -37,7 +37,7 @@
                         <th>
                             @Html.DisplayNameFor(model => model.Price)
                         </th>
-                        <th class="protected disable small"></th>
+                       
                     </tr>
                     <!--Alphabetically order by category-->
                     @foreach (var item in Model.OrderBy( x => x.Category))
@@ -52,7 +52,7 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Price)
                     </td>
-                    <td class="protected disable small">
+                    <td class="protected disable"  width="15%">
                         <button class="protected disable" id="arts" type="button" onclick="location.href='@Url.Action("Edit", "Arts_Crafts_A_C", new { id = item.Arts_Crafts_A_C_ID } )'">Edit</button>   
                         <button class="protected disable" id="arts" type="button" onclick="location.href='@Url.Action("Delete", "Arts_Crafts_A_C", new { id = item.Arts_Crafts_A_C_ID } )'">Delete</button>
                     </td>
