@@ -76,7 +76,8 @@ td:nth-child(4) {
 }
 
 #content button {
-    font-size: 20px;
+    font-size: 30px;
+    background-color: blue;
 }
 
 
