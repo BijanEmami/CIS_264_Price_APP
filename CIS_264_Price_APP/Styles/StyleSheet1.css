@@ -75,6 +75,10 @@ td:nth-child(4) {
     margin: 0 0.5em 0.5em 0.5em;
 }
 
+#content button {
+    font-size: 20px;
+}
+
 
 /* Formats back button */
 #wrapper {
