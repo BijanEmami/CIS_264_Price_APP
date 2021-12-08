@@ -1,5 +1,7 @@
-Used ASP.NET Framework which connects to SQL server express to create database of all the categories, items, and prices
+Used ASP.NET Framework which connects to SQL server express to create a database of all the categories, items, and prices
 on a local host computer.  Each main category e.g., Holidays, Textiles, etc... has tables within them
 holding values based of alphabetical ordering e.g. A-C, D-G, etc...  Within those, a table is
 created to hold all the values contained in categories, item, and price.  These tables have the ability add,
 edit, and delete. 
+
+The data for the database is help in the APP_DATA folder, and is a .mdf file if need for reference.
