@@ -1,4 +1,7 @@
-Used ASP.NET Framework which connects to SQL server express to create a database of all the categories, items, and prices
+We used ASP.NET MVC Framework so each model has it's own controller and views that we intergrated with 
+HTML, CSS, and JavaScript.
+
+The ASP.NET Framework connects to SQL server express to create a database of all the categories, items, and prices
 on a local host computer.  Each main category e.g., Holidays, Textiles, etc... has tables within them
 holding values based of alphabetical ordering e.g. A-C, D-G, etc...  Within those, a table is
 created to hold all the values contained in categories, item, and price.  These tables have the ability add,
