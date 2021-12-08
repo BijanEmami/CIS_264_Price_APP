@@ -4,4 +4,4 @@ holding values based of alphabetical ordering e.g. A-C, D-G, etc...  Within thos
 created to hold all the values contained in categories, item, and price.  These tables have the ability add,
 edit, and delete. 
 
-The data for the database is help in the APP_DATA folder, and is a .mdf file if need for reference.
+The data for the database is held in the APP_DATA folder, and is a .mdf file if need for reference.
