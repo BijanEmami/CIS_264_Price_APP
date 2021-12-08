@@ -1,9 +1,9 @@
 # CIS_264_Price_APP
 
-A pricing application that would draw off of a database of product categories and a price list, 
-so we can quickly locate a price as well as have a singe repository for up-to-date pricing. 
+A pricing application that would draw information from a database of product categories and a price list, 
+so we can quickly locate an item's price as well as have a singe repository for up-to-date pricing. 
 
-It will have three screens. The first is a series of buttons that list the product categories. 
+It will have three main screens. The first is a series of buttons that list the product categories. 
 Once a category is selected, then the second screen would have more details by sorting alphabetically. 
 Once you select one of these buttons, then the third screen would have the prices. 
 
