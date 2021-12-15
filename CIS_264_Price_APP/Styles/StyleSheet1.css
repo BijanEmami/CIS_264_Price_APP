@@ -174,8 +174,8 @@ td:nth-child(4) {
     font-weight: bolder;
 }
 
-    #close:hover,
-    #close:focus {
+#close:hover,
+#close:focus {
         color: #000;
         text-decoration: none;
         cursor: pointer;

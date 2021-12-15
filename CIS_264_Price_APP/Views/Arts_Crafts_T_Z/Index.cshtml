@@ -24,7 +24,7 @@
         <h1>T - Z</h1>
         <div id="content">
             <p>
-                <button class="protected disable" id="arts" type="button" onclick="location.href='@Url.Action("Create", "Arts_Crafts_T_Z" )'">Create</button>
+                <button class="protected disable" id="artsCreate" type="button" onclick="location.href='@Url.Action("Create", "Arts_Crafts_T_Z" )'">Create</button>
             </p>
             <table class="table artsLight">
                 <tr>
@@ -53,8 +53,8 @@
                         @Html.DisplayFor(modelItem => item.Price)
                     </td>
                     <td class="protected disable" width="15%">
-                        <button class="protected disable" id="arts" type="button" onclick="location.href='@Url.Action("Edit", "Arts_Crafts_T_Z", new { id = item.Arts_Crafts_T_Z_ID } )'">Edit</button>
-                        <button class="protected disable" id="arts" type="button" onclick="location.href='@Url.Action("Delete", "Arts_Crafts_T_Z", new { id = item.Arts_Crafts_T_Z_ID } )'">Delete</button>
+                        <button class="protected disable" id="artsEdit" type="button" onclick="location.href='@Url.Action("Edit", "Arts_Crafts_T_Z", new { id = item.Arts_Crafts_T_Z_ID } )'">Edit</button>
+                        <button class="protected disable" id="artsDel" type="button" onclick="location.href='@Url.Action("Delete", "Arts_Crafts_T_Z", new { id = item.Arts_Crafts_T_Z_ID } )'">Delete</button>
                     </td>
                 </tr>
                 }

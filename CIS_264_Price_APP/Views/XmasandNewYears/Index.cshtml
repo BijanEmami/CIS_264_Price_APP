@@ -24,7 +24,7 @@
         <h1>Xmas and New Years</h1>
         <div id="content">
             <p>
-                <button class="protected disable" id="holiday" type="button" onclick="location.href='@Url.Action("Create", "XmasandNewYears" )'">Create</button>
+                <button class="protected disable" id="holidayCreate" type="button" onclick="location.href='@Url.Action("Create", "XmasandNewYears" )'">Create</button>
             </p>
             <table class="table holidayLight">
                 <tr>
@@ -53,8 +53,8 @@
                         @Html.DisplayFor(modelItem => item.Price)
                     </td>
                     <td class="protected disable" width="15%" >
-                        <button class="protected disable" id="holiday" type="button" onclick="location.href='@Url.Action("Edit", "XmasandNewYear", new { id = item.XmasandNewYear_ID } )'">Edit</button>
-                        <button class="protected disable" id="holiday" type="button" onclick="location.href='@Url.Action("Delete", "XmasandNewYear", new { id = item.XmasandNewYear_ID } )'">Delete</button>
+                        <button class="protected disable" id="holidayEdit" type="button" onclick="location.href='@Url.Action("Edit", "XmasandNewYear", new { id = item.XmasandNewYear_ID } )'">Edit</button>
+                        <button class="protected disable" id="holidayDel" type="button" onclick="location.href='@Url.Action("Delete", "XmasandNewYear", new { id = item.XmasandNewYear_ID } )'">Delete</button>
                     </td>
                 </tr>
                 }

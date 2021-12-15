@@ -24,7 +24,7 @@
         <h1>Q - Z</h1>
         <div id="content">
             <p>
-                <button class="protected disable" id="school" type="button" onclick="location.href='@Url.Action("Create", "School_Office_Q_Z" )'">Create</button>
+                <button class="protected disable" id="schoolCreate" type="button" onclick="location.href='@Url.Action("Create", "School_Office_Q_Z" )'">Create</button>
             </p>
             <table class="table schoolLight">
                 <tr>
@@ -53,8 +53,8 @@
                         @Html.DisplayFor(modelItem => item.Price)
                     </td>
                     <td class="protected disable" width="15%">
-                        <button class="protected disable" id="school" type="button" onclick="location.href='@Url.Action("Edit", "School_Office_Q_Z", new { id = item.School_Office_Q_Z_ID } )'">Edit</button>
-                        <button class="protected disable" id="school" type="button" onclick="location.href='@Url.Action("Delete", "School_Office_Q_Z", new { id = item.School_Office_Q_Z_ID } )'">Delete</button>
+                        <button class="protected disable" id="schoolEdit" type="button" onclick="location.href='@Url.Action("Edit", "School_Office_Q_Z", new { id = item.School_Office_Q_Z_ID } )'">Edit</button>
+                        <button class="protected disable" id="schoolDel" type="button" onclick="location.href='@Url.Action("Delete", "School_Office_Q_Z", new { id = item.School_Office_Q_Z_ID } )'">Delete</button>
                     </td>
                 </tr>
                 }

@@ -14,6 +14,8 @@ namespace CIS_264_Price_APP.Models.Holidays
 
         public string Name { get; set; }
         public string Price { get; set; }
+
+        public string Details { get; set; }
         public virtual Holidays Holidays { get; set; }
     }
 }
