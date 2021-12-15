@@ -87,9 +87,9 @@ function toggleDetail(btn) {
         btn.innerText = 'Close Details';
         btn.classList.remove('disable');
     }
-    else {
+    else if (btn.innerText == 'Close Details') {
         btn.innerText = 'Details';
-        btn.classList.add('disable');
+        //btn.classList.add('disable');
     }
 }
 
