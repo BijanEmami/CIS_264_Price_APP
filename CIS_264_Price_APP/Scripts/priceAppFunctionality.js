@@ -80,7 +80,7 @@ function toggleLogInOut() {
 
 }
 
-function toggleDetail() {
+function toggleDetail(i) {
     //console.log(document.querySelector('#detailsBtn').innerText);
     //document.querySelector('#detailsBtn').innerText = 'Close Details';
     let detailBtns = document.querySelectorAll('#detailsBtn');
