@@ -83,6 +83,14 @@ function toggleLogInOut() {
 function toggleDetail(btn) {
     console.log("run");
     //console.log(document.querySelector('#detailsBtn').innerText);
+    if (btn.innerText == 'Details') {
+        btn.innerText = 'Close Details';
+        btn.classList.remove('disable');
+    }
+    else {
+        btn.innerText = 'Details';
+        btn.classList.add('disable');
+    }
     btn.innerText = 'Close Details';
     console.log(btn);
 }
