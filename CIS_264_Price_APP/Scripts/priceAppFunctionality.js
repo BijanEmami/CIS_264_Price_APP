@@ -119,6 +119,6 @@ if (sessionStorage.getItem("isAdmin") == "true") {
 loginBtn.addEventListener('click', login);
 
 //detailBtns.forEach(item => addEventListener('click', toggleDetail));
-for (let i = 0; i < detailBtns.length; i++) {
+for (let i = 0; i < detailsBtns.length; i++) {
     detailBtns[i].addEventListener('click', toggleDetail(detailsBtn[i]));
 }
