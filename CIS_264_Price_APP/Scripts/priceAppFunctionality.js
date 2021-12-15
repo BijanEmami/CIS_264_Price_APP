@@ -120,5 +120,5 @@ loginBtn.addEventListener('click', login);
 
 //detailBtns.forEach(item => addEventListener('click', toggleDetail));
 for (let i = 0; i < detailsBtns.length; i++) {
-    detailsBtns[i].addEventListener('click', toggleDetail(detailsBtn[i]));
+    detailsBtns[i].addEventListener('click', toggleDetail(detailsBtns[i]));
 }
