@@ -47,7 +47,7 @@ namespace CIS_264_Price_APP.Controllers.HolidaysControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Valentines_ID,Category,Name,Price")] Valentines valentines)
+        public ActionResult Create([Bind(Include = "Valentines_ID,Category,Name,Price,Details")] Valentines valentines)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace CIS_264_Price_APP.Controllers.HolidaysControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Valentines_ID,Category,Name,Price")] Valentines valentines)
+        public ActionResult Edit([Bind(Include = "Valentines_ID,Category,Name,Price,Details")] Valentines valentines)
         {
             if (ModelState.IsValid)
             {

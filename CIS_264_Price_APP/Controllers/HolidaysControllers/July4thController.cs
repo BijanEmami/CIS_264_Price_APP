@@ -47,7 +47,7 @@ namespace CIS_264_Price_APP.Controllers.HolidaysControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "July4th_ID,Category,Name,Price")] July4th july4th)
+        public ActionResult Create([Bind(Include = "July4th_ID,Category,Name,Price,Details")] July4th july4th)
         {
             if (ModelState.IsValid)
             {
