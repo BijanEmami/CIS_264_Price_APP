@@ -190,6 +190,10 @@
     <Compile Include="Migrations\202112010310186_idk.Designer.cs">
       <DependentUpon>202112010310186_idk.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112151546107_Details_Update.cs" />
+    <Compile Include="Migrations\202112151546107_Details_Update.Designer.cs">
+      <DependentUpon>202112151546107_Details_Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Arts_Crafts\ArtsAndCrafts.cs" />
     <Compile Include="Models\Arts_Crafts\Arts_Crafts_A_C.cs" />
@@ -428,6 +432,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112010310186_idk.resx">
       <DependentUpon>202112010310186_idk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112151546107_Details_Update.resx">
+      <DependentUpon>202112151546107_Details_Update.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

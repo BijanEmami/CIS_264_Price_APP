@@ -13,6 +13,8 @@ namespace CIS_264_Price_APP.Models.Textiles
         public string Category { get; set; }
         public string Name { get; set; }
         public string Price { get; set; }
+
+        public string Details { get; set; }
         public virtual Textiles Textiles { get; set; }
     }
 }
