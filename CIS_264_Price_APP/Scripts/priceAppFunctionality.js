@@ -80,10 +80,10 @@ function toggleLogInOut() {
 
 }
 
-function toggleDetail(e) {
+function toggleDetail() {
     console.log('f(toggleDetail)');
-    console.log(e);
-    //console.log(e.nextSibling);
+    console.log(this.innerHTML);
+    //console.log(this.nextSibling);
 }
 
 /*
@@ -117,4 +117,4 @@ if (sessionStorage.getItem("isAdmin") == "true") {
 // logout user or open login pop-up box when login/logout button is clicked
 loginBtn.addEventListener('click', login);
 
-detailBtns.forEach(item => addEventListener('click', toggleDetail(e)));
+detailBtns.forEach(item => addEventListener('click', toggleDetail));
