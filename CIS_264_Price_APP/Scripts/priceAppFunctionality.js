@@ -80,11 +80,11 @@ function toggleLogInOut() {
 
 }
 
-function toggleDetail(e) {
-    console.log(document.querySelector('#detailsBtn').innerText);
-    document.querySelector('#detailsBtn').innerText = 'Close Details';
-    //console.log(e);
-    //console.log(e.nextSibling);
+function toggleDetail() {
+    //console.log(document.querySelector('#detailsBtn').innerText);
+    //document.querySelector('#detailsBtn').innerText = 'Close Details';
+    let detailBtns = document.querySelectorAll('#detailsBtn');
+    console.log(detailBtns[i]);
 }
 
 /*
@@ -118,4 +118,8 @@ if (sessionStorage.getItem("isAdmin") == "true") {
 // logout user or open login pop-up box when login/logout button is clicked
 loginBtn.addEventListener('click', login);
 
-detailBtns.forEach(item => addEventListener('click', toggleDetail));
+//detailBtns.forEach(item => addEventListener('click', toggleDetail));
+for (let i = 0; i < detailBtns.length; i++) {
+    detailBtns[i].addEventListener('click', toggleDetail(i));
+}
+
