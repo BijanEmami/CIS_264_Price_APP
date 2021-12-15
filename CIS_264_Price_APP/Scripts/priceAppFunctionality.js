@@ -120,6 +120,6 @@ loginBtn.addEventListener('click', login);
 
 //detailBtns.forEach(item => addEventListener('click', toggleDetail));
 for (let i = 0; i < detailBtns.length; i++) {
-    detailBtns[i].addEventListener('click', toggleDetail(detailBtn[i]));
+    detailBtns[i].addEventListener('click', toggleDetail(detailBtns[i]));
 }
 
