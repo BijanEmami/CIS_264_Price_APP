@@ -1,7 +1,7 @@
 # CIS_264_Price_APP
 
 Made by: Bijan Emami, Tyler Smith, and Lydia Weaver
-
+----
 GitHub accounts: BijanEmami tsmit256 and MelonJumper
 
 A pricing application that would draw information from a database of product categories and a price list,
