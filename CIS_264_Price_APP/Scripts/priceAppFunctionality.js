@@ -80,11 +80,11 @@ function toggleLogInOut() {
 
 }
 
-function toggleDetail(i) {
+function toggleDetail(btn) {
+    console.log("run");
     //console.log(document.querySelector('#detailsBtn').innerText);
     //document.querySelector('#detailsBtn').innerText = 'Close Details';
-    let detailBtns = document.querySelectorAll('.detailsBtn');
-    console.log(detailBtns[i]);
+    console.log(btn);
 }
 
 /*
@@ -120,6 +120,6 @@ loginBtn.addEventListener('click', login);
 
 //detailBtns.forEach(item => addEventListener('click', toggleDetail));
 for (let i = 0; i < detailBtns.length; i++) {
-    detailBtns[i].addEventListener('click', toggleDetail(i));
+    detailBtns[i].addEventListener('click', toggleDetail(detailBtn[i]));
 }
 
