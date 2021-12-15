@@ -83,7 +83,7 @@ function toggleLogInOut() {
 function toggleDetail(btn) {
     console.log("run");
     //console.log(document.querySelector('#detailsBtn').innerText);
-    //document.querySelector('#detailsBtn').innerText = 'Close Details';
+    btn.innerText = 'Close Details';
     console.log(btn);
 }
 
