@@ -47,7 +47,7 @@ namespace CIS_264_Price_APP.Controllers.ArtsAndCraftsControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Arts_Crafts_P_Q_ID,Category,Name,Price")] Arts_Crafts_P_Q arts_Crafts_P_Q)
+        public ActionResult Create([Bind(Include = "Arts_Crafts_P_Q_ID,Category,Name,Price,Details")] Arts_Crafts_P_Q arts_Crafts_P_Q)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace CIS_264_Price_APP.Controllers.ArtsAndCraftsControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Arts_Crafts_P_Q_ID,Category,Name,Price")] Arts_Crafts_P_Q arts_Crafts_P_Q)
+        public ActionResult Edit([Bind(Include = "Arts_Crafts_P_Q_ID,Category,Name,Price,Details")] Arts_Crafts_P_Q arts_Crafts_P_Q)
         {
             if (ModelState.IsValid)
             {
