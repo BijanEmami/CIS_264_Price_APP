@@ -1,5 +1,5 @@
 /**
- * @author TBD(L) 
+ * @author TBD(L)
  * @file priceAppFunctionality.js
  * Nov 2021
  **/
@@ -43,7 +43,7 @@ function login() {
 
 function validate() {
     // checks if user enters correct password
-    // if correct, toggleLogInOut() is called 
+    // if correct, toggleLogInOut() is called
     // archived items are made visible
     if (result.value == pw) {
         sessionStorage.setItem("isAdmin", true);
@@ -122,4 +122,3 @@ loginBtn.addEventListener('click', login);
 for (let i = 0; i < detailBtns.length; i++) {
     detailBtns[i].addEventListener('click', toggleDetail(detailsBtn[i]));
 }
-
