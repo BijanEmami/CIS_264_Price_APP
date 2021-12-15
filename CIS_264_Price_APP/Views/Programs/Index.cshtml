@@ -25,7 +25,7 @@
 
         <div id="content">
             <p>
-                <button class="protected disable" id="plastics" type="button" onclick="location.href='@Url.Action("Create", "Programs" )'">Create</button>
+                <button class="protected disable" id="plasticsCreate" type="button" onclick="location.href='@Url.Action("Create", "Programs" )'">Create</button>
             </p>
             <table class="table plasticsLight">
                 <tr>
@@ -54,8 +54,8 @@
                         @Html.DisplayFor(modelItem => item.Price)
                     </td> 
                     <td class="protected disable" width="15%">
-                        <button class="protected disable" id="plastics" type="button" onclick="location.href='@Url.Action("Edit", "Programs", new { id = item.Programs_ID } )'">Edit</button>
-                        <button class="protected disable" id="plastics" type="button" onclick="location.href='@Url.Action("Delete", "Programs", new { id = item.Programs_ID } )'">Delete</button>
+                        <button class="protected disable" id="plasticsEdit" type="button" onclick="location.href='@Url.Action("Edit", "Programs", new { id = item.Programs_ID } )'">Edit</button>
+                        <button class="protected disable" id="plasticsDel" type="button" onclick="location.href='@Url.Action("Delete", "Programs", new { id = item.Programs_ID } )'">Delete</button>
                     </td>
                 </tr>
                 }
