@@ -103,7 +103,7 @@ let loginBtn = document.getElementById('login');
 let result = document.getElementById('password');
 let close = document.getElementById('close');
 let placeholder = document.getElementById('placeholder');
-let detailBtns = document.querySelectorAll('.detailsBtn');
+let detailsBtns = document.querySelectorAll('.detailsBtn');
 
 // check if user is logged in or out
 if (!sessionStorage.getItem("isAdmin")) {
@@ -120,6 +120,6 @@ loginBtn.addEventListener('click', login);
 
 //detailBtns.forEach(item => addEventListener('click', toggleDetail));
 for (let i = 0; i < detailBtns.length; i++) {
-    detailBtns[i].addEventListener('click', toggleDetail(detailBtn[i]));
+    detailBtns[i].addEventListener('click', toggleDetail(detailsBtn[i]));
 }
 
