@@ -20,13 +20,9 @@
         <h1>A-C</h1>
         <div id="content">
 
-
-
             @using (Html.BeginForm())
             {
                 @Html.AntiForgeryToken()
-
-
 
                 <div class="formbox">
                     <h4>Create</h4>
@@ -52,12 +48,7 @@
                         @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
                     </div>
 
-
                 </div>
-
-
-
-
 
                 <div class="form-group ">
 
@@ -65,8 +56,6 @@
 
                 </div>
                 <!--</div>-->
-
-
             }
 
         </div>
