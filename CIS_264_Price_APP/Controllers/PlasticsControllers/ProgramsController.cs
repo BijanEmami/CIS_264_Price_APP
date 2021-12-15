@@ -47,7 +47,7 @@ namespace CIS_264_Price_APP.Controllers.PlasticsControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Programs_ID,Category,Name,Price")] Programs programs)
+        public ActionResult Create([Bind(Include = "Programs_ID,Category,Name,Price,Details")] Programs programs)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace CIS_264_Price_APP.Controllers.PlasticsControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Programs_ID,Category,Name,Price")] Programs programs)
+        public ActionResult Edit([Bind(Include = "Programs_ID,Category,Name,Price,Details")] Programs programs)
         {
             if (ModelState.IsValid)
             {
