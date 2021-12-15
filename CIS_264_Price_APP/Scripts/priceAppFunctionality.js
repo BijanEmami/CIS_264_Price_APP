@@ -85,11 +85,11 @@ function toggleDetail(btn) {
     //console.log(document.querySelector('#detailsBtn').innerText);
     if (btn.innerText == 'Details') {
         btn.innerText = 'Close Details';
-        btn.nextSibling.classList.remove('disable');
+        btn.nextElementSibling.classList.remove('disable');
     }
     else if (btn.innerText == 'Close Details') {
         btn.innerText = 'Details';
-        btn.nextSibling.classList.add('disable');
+        btn.nextElementSibling.classList.add('disable');
     }
 }
 
