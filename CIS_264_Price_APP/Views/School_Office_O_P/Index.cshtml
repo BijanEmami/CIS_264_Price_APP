@@ -42,21 +42,25 @@
 
                 @foreach (var item in Model.OrderBy(x => x.Category))
                 {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Category)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Price)
-                    </td>
-                    <td class="protected disable" width="15%">
-                        <button class="protected disable" id="schoolEdit" type="button" onclick="location.href='@Url.Action("Edit", "School_Office_O_P", new { id = item.School_Office_O_P_ID } )'">Edit</button>
-                        <button class="protected disable" id="schoolDel" type="button" onclick="location.href='@Url.Action("Delete", "School_Office_O_P", new { id = item.School_Office_O_P_ID } )'">Delete</button>
-                    </td>
-                </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    <button id="detailsBtn">Details</button>
+                    <p class="detail disable">@Html.DisplayFor(modelItem => item.Details) </p>
+                </td>
+                <td class="protected disable" width="15%">
+                    <button class="protected disable" id="schoolEdit" type="button" onclick="location.href='@Url.Action("Edit", "School_Office_O_P", new { id = item.School_Office_O_P_ID } )'">Edit</button>
+                    <button class="protected disable" id="schoolDel" type="button" onclick="location.href='@Url.Action("Delete", "School_Office_O_P", new { id = item.School_Office_O_P_ID } )'">Delete</button>
+                </td>
+            </tr>
                 }
 
             </table>
