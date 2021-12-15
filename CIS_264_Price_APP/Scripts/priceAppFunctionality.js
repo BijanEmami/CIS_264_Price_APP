@@ -81,8 +81,8 @@ function toggleLogInOut() {
 }
 
 function toggleDetail(e) {
-    console.log(document.querySelector('#detailsBtn').innerText);
-    document.querySelector('#detailsBtn').innerText = 'Close Details';
+    console.log(this.document.querySelector('#detailsBtn').innerText);
+    //document.querySelector('#detailsBtn').innerText = 'Close Details';
     //console.log(e);
     //console.log(e.nextSibling);
 }
