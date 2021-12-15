@@ -83,7 +83,7 @@ function toggleLogInOut() {
 function toggleDetail(i) {
     //console.log(document.querySelector('#detailsBtn').innerText);
     //document.querySelector('#detailsBtn').innerText = 'Close Details';
-    let detailBtns = document.querySelectorAll('#detailsBtn');
+    let detailBtns = document.querySelectorAll('.detailsBtn');
     console.log(detailBtns[i]);
 }
 
@@ -103,7 +103,7 @@ let loginBtn = document.getElementById('login');
 let result = document.getElementById('password');
 let close = document.getElementById('close');
 let placeholder = document.getElementById('placeholder');
-let detailBtns = document.querySelectorAll('#detailsBtn');
+let detailBtns = document.querySelectorAll('.detailsBtn');
 
 // check if user is logged in or out
 if (!sessionStorage.getItem("isAdmin")) {
