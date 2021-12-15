@@ -14,6 +14,8 @@ namespace CIS_264_Price_APP.Models.Plastics
 
         public string Name { get; set; }
         public string Price { get; set; }
+
+        public string Details { get; set; }
         public virtual Plastics Plastics { get; set; }
     }
 }
