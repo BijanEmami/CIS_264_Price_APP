@@ -47,7 +47,7 @@ namespace CIS_264_Price_APP.Controllers.MiscellaneousControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Misc_T_Z_ID,Category,Name,Price")] Misc_T_Z misc_T_Z)
+        public ActionResult Create([Bind(Include = "Misc_T_Z_ID,Category,Name,Price,Details")] Misc_T_Z misc_T_Z)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace CIS_264_Price_APP.Controllers.MiscellaneousControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Misc_T_Z_ID,Category,Name,Price")] Misc_T_Z misc_T_Z)
+        public ActionResult Edit([Bind(Include = "Misc_T_Z_ID,Category,Name,Price,Details")] Misc_T_Z misc_T_Z)
         {
             if (ModelState.IsValid)
             {

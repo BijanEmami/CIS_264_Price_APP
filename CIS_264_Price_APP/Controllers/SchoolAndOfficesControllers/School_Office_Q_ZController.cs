@@ -47,7 +47,7 @@ namespace CIS_264_Price_APP.Controllers.SchoolAndOfficesControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "School_Office_Q_Z_ID,Category,Name,Price")] School_Office_Q_Z school_Office_Q_Z)
+        public ActionResult Create([Bind(Include = "School_Office_Q_Z_ID,Category,Name,Price,Details")] School_Office_Q_Z school_Office_Q_Z)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace CIS_264_Price_APP.Controllers.SchoolAndOfficesControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "School_Office_Q_Z_ID,Category,Name,Price")] School_Office_Q_Z school_Office_Q_Z)
+        public ActionResult Edit([Bind(Include = "School_Office_Q_Z_ID,Category,Name,Price,Details")] School_Office_Q_Z school_Office_Q_Z)
         {
             if (ModelState.IsValid)
             {

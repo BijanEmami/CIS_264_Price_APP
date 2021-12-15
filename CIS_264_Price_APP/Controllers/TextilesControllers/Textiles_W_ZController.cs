@@ -47,7 +47,7 @@ namespace CIS_264_Price_APP.Controllers.TextilesControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Textiles_W_Z_ID,Category,Name,Price")] Textiles_W_Z textiles_W_Z)
+        public ActionResult Create([Bind(Include = "Textiles_W_Z_ID,Category,Name,Price,Details")] Textiles_W_Z textiles_W_Z)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace CIS_264_Price_APP.Controllers.TextilesControllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Textiles_W_Z_ID,Category,Name,Price")] Textiles_W_Z textiles_W_Z)
+        public ActionResult Edit([Bind(Include = "Textiles_W_Z_ID,Category,Name,Price,Details")] Textiles_W_Z textiles_W_Z)
         {
             if (ModelState.IsValid)
             {
