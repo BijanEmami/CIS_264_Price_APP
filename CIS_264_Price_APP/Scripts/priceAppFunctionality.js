@@ -81,6 +81,7 @@ function toggleLogInOut() {
 }
 
 function toggleDetail() {
+    console.log('f(toggleDetail)');
     console.log(this);
     console.log(this.nextSibling);
 }
@@ -101,7 +102,7 @@ let loginBtn = document.getElementById('login');
 let result = document.getElementById('password');
 let close = document.getElementById('close');
 let placeholder = document.getElementById('placeholder');
-let detailBtns = document.querySelectorAll('#detailBtn');
+let detailBtns = document.querySelectorAll('#detailsBtn');
 
 // check if user is logged in or out
 if (!sessionStorage.getItem("isAdmin")) {
@@ -116,4 +117,4 @@ if (sessionStorage.getItem("isAdmin") == "true") {
 // logout user or open login pop-up box when login/logout button is clicked
 loginBtn.addEventListener('click', login);
 
-detailBtns.forEach(item => addEventListener('click', toggleDetail);
+detailBtns.forEach(item => addEventListener('click', toggleDetail));
