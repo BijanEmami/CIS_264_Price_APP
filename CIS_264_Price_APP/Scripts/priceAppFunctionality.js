@@ -1,5 +1,5 @@
 /**
- * @author TBD(L) 
+ * @author TBD(L)
  * @file priceAppFunctionality.js
  * Nov 2021
  **/
@@ -43,7 +43,7 @@ function login() {
 
 function validate() {
     // checks if user enters correct password
-    // if correct, toggleLogInOut() is called 
+    // if correct, toggleLogInOut() is called
     // archived items are made visible
     if (result.value == pw) {
         sessionStorage.setItem("isAdmin", true);
@@ -80,8 +80,8 @@ function toggleLogInOut() {
 
 }
 
-function toggleDetail(i) {
-    //console.log(document.querySelector('#detailsBtn').innerText);
+function toggleDetail(e) {
+    console.log(this.document.querySelector('#detailsBtn').innerText);
     //document.querySelector('#detailsBtn').innerText = 'Close Details';
     let detailBtns = document.querySelectorAll('.detailsBtn');
     console.log(detailBtns[i]);
@@ -118,8 +118,4 @@ if (sessionStorage.getItem("isAdmin") == "true") {
 // logout user or open login pop-up box when login/logout button is clicked
 loginBtn.addEventListener('click', login);
 
-//detailBtns.forEach(item => addEventListener('click', toggleDetail));
-for (let i = 0; i < detailBtns.length; i++) {
-    detailBtns[i].addEventListener('click', toggleDetail(i));
-}
-
+detailBtns.forEach(item => addEventListener('click', toggleDetail));
