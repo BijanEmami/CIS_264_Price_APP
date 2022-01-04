@@ -6,7 +6,7 @@
 
 // static password set here
 // change this value to change the password
-const pw = 'pwd';
+const pw = '3269';
 
 function login() {
     // hides pop-up if user clicks 'x' button
