@@ -2,7 +2,7 @@
 
 Made by: Bijan Emami, Tyler Smith, and Lydia Weaver
 
-GitHub accounts: BijanEmami tsmit256 and MelonJumper
+GitHub accounts: BijanEmami tsmith256 and MelonJumper
 
 A pricing application that would draw information from a database of product categories and a price list,
 so we can quickly locate an item's price as well as have a single repository for up-to-date pricing.
